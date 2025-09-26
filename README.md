@@ -1,4 +1,4 @@
-# Projeto - Eng. Software
+# 📱 SISTEMA DE COMANDA DIGITAL
 
 # INTRODUÇÃO A ENGENHARIA DE REQUISITOS
 ## 1 OBJETIVO
@@ -38,7 +38,7 @@ Dessa forma, o tempo estimado para a entrega de uma versão funcional é de apro
 A proposta do sistema é altamente significativa, pois integra tecnologia digital de autoatendimento com a humanização da experiência do usuário. No setor de alimentação, soluções interativas oferecem benefícios claros, como maior eficiência operacional, redução de erros nos pedidos e aumento da satisfação dos clientes.
 Além do aspecto funcional, a aplicação de interfaces lúdicas e personalizadas promove uma jornada mais agradável e inclusiva, estimulando o engajamento e fortalecendo a relação entre cliente e estabelecimento. Esse enfoque alia inovação tecnológica à valorização do atendimento, tornando o projeto diferenciado e alinhado às demandas atuais de digitalização no setor de serviços.
 
-## LEVANTAMENTO DE REQUISITOS DO PROJETO
+# LEVANTAMENTO DE REQUISITOS DO PROJETO
 ## 1 PESQUISAS
 ### 1.1 Objetivo da Busca
 O objetivo foi identificar estudos acadêmicos e reportagens que tratam do uso de sistemas digitais de autoatendimento no setor de alimentação, buscando compreender seus impactos na experiência do usuário, na eficiência operacional e na satisfação dos clientes.
@@ -114,11 +114,11 @@ Foi realizada uma entrevista semi-estruturada com a atendente da Mais1Café da u
 
 O roteiro da entrevista foi montado com o intuito de abranger os principais aspectos do público-alvo da Mais1Café e do sistema de comanda digital utilizado no estabelecimento. Ele foi elaborado a fim de manter a entrevistada confortável durante o processo e entender o ponto de vista dela em relação ao tema abordado, visto que se trata de uma pessoa que interage com a comanda digital diariamente. Por se tratar de uma entrevista semi-estruturada, a entrevista não se prendeu exclusivamente às perguntas abaixo, de modo que ajustes foram realizados em tempo real sempre que necessário.
 
-## 2.2.1 Apresentação
+#### 2.2.1 Apresentação
 
 Explicar o propósito da entrevista, a fim de contextualizar o entrevistado e deixá-lo confortável a respeito da precedência das perguntas.
 
-## 2.2.2 Aquecimento
+#### 2.2.2 Aquecimento
 
 Perguntar sobre nome e período de atuação na loja. Buscar entender a experiência de trabalho da entrevistada e conhecê-la melhor, buscando criar uma transição suave para a etapa principal da entrevista.
 Perguntas direcionadas:
@@ -126,240 +126,277 @@ Perguntas direcionadas:
 * Qual o horário de pico da loja? 
 * Como os clientes fazem o pedido?
 
-2.2.3 Parte principal
+#### 2.2.3 Parte principal
 Perguntas direcionadas:
 * Os clientes geralmente sabem o que querem comprar assim que chegam ou passam muito tempo olhando o cardápio?
 * Quais as dificuldades técnicas que os clientes enfrentam ao utilizar a comanda digital? Por que você acha que isso acontece?
 * Já teve clientes que não quiseram utilizar a comanda digital? Se sim, por quê?
 * A maior parte dos clientes consegue utilizar a comanda digital sozinhos?
 
-2.2.4 Desaquecimento
+#### 2.2.4 Desaquecimento
 Perguntas direcionadas:
 * O que você acha da comanda digital da Mais1Café? Mudaria alguma coisa? Se sim, o que e por quê?
 * (E você? Já usou?) Quando você vai em algum estabelecimento, você prefere ser atendida por um humano ou realizar seu pedido por meio de uma comanda digital? Por quê?
 * Você acredita que o sistema de comanda digital pode substituir o atendimento humano no futuro? Por quê?
 
-2.2.5 Conclusão
-	Agradecer pelas respostas e permitir que a entrevistada faça suas considerações finais, a fim de confirmar suas respostas e refletir se tem algo a mais para complementar.
-	Perguntas direcionadas:
+#### 2.2.5 Conclusão
+Agradecer pelas respostas e permitir que a entrevistada faça suas considerações finais, a fim de confirmar suas respostas e refletir se tem algo a mais para complementar.
+
+Perguntas direcionadas:
 * Como você acha que seria uma comanda digital ideal?
 
-2.3 Transcrição da Entrevista
+### 2.3 Transcrição da Entrevista
+
 Inicialmente, a entrevistada fez uma breve apresentação: seu nome é Cynthia, tem 25 anos e trabalha há quase 7 meses na Mais1Café. Antes disso, trabalhou como bartender fazendo e servindo drinks. Inclusive, ela comentou que a comanda digital facilita bastante as coisas, visto que já trabalhou com atendimento ao público em um local que não utilizava esse recurso. Cynthia pontuou que a comanda permite que o atendente foque mais em preparar o pedido, sem precisar dividir sua atenção em mais de uma tarefa simultaneamente. 
+
 Sobre o público-alvo do local, ela comentou que não tem uma faixa etária específica. Pessoas de todas as idades frequentam o local. Sobre o horário de pico, ela comentou que às 9h e às 17h são os horários com maior movimento na cafeteria. Sobre a solicitação de ajuda durante o uso da comanda digital, ela disse que geralmente o pessoal de mais idade e aqueles que não conhecem o estabelecimento costumam pedir ajuda. Sobre os clientes demorarem para fazer o pedido por não saberem o que escolher, ela comentou que não demora muito, mesmo clientes que são novos na cafeteria. Ela disse que às vezes sugere alguma coisa ou responde dúvidas específicas sobre os itens do cardápio, como ingredientes, etc.
+
 Sobre dificuldades técnicas no uso da comanda, ela ressaltou que o pessoal de idade costuma ter mais dificuldade para utilizar o sistema. Inclusive, durante a entrevista um casal de senhores chegou no estabelecimento e não utilizou a comanda. A atendente precisou fazer o pedido por eles no sistema, já que eles optaram por conversar diretamente com ela.
+
 Sobre a interface da comanda digital, ela ressaltou que a tela inicial não é interativa. Parece um cartaz/painel inanimado em vez de uma comanda digital. Embora tenha um texto escrito “Faça o seu pedido”, poderia ter algum elemento mais chamativo, como um botão, que indicasse que se trata de uma comanda digital interativa e instigasse o cliente a interagir com ela. Ela também comentou sobre o cardápio: existem várias categorias de produtos vendidos na cafeteria, como bebidas quentes, bebidas geladas, etc. Os clientes não percebem que existe um menu na lateral da comanda que possibilita transitar por essas categorias. Geralmente, eles confundem esse menu com a segunda tela do cardápio, onde aparecem as principais sugestões de produtos separadas por categorias. Por isso, o design é confuso e pouco intuitivo. É difícil se localizar pela primeira vez. Durante a entrevista, inclusive, uma cliente não conseguiu encontrar o pão de queijo no cardápio e solicitou ajuda para a atendente. Além disso, o sistema às vezes recomenda produtos que não estão disponíveis no estoque, o que pode gerar um sentimento de frustração no usuário por visualizar produtos que não estão disponíveis na unidade.
+
 Quando questionada sobre preferir usar uma comanda ou ser atendida por um humano, ela disse que prefere a comanda, pois pode escolher o seu pedido no seu próprio tempo, olhar o cardápio com calma sem ter alguém esperando para anotar o seu pedido. Ela acredita que o autoatendimento é mais prático. Se a comanda for clara e tiver todas as informações necessárias para guiar o cliente, ela acredita que não há necessidade de um humano para auxiliar o atendimento. Ela também ressaltou que pessoas mais velhas possuem naturalmente dificuldade para mexer na comanda, então pessoas mais jovens sempre terão mais facilidade. Ela comentou que a comanda da Mais1Café costuma colocar nas sugestões o que mais querem vender, não necessariamente o que mais é vendido. Além disso, a seção de sugestões não deixa intuitivo que se trata de sugestões. O título é muito pequeno, inclusive. 
+
 Ademais, ela ressaltou uma característica importante da comanda: o usuário pode selecionar o idioma desejado. Isso ajuda no atendimento de clientes estrangeiros, principalmente em cidades maiores. Ela também comentou que descrições mais detalhadas em produtos diferentes ajuda bastante no atendimento. Também falou que seria interessante ter um selo no produto indicando que o produto é direcionado para pessoas com intolerância, ou seja, não tem glúten, etc. Outra opção seria ter uma categoria só para intolerantes.
 
-2.3 Mapa Temático da Entrevista
+### 2.3 Mapa Temático da Entrevista
 A partir dos dados obtidos na entrevista, foi realizada uma análise sistemática que permitiu extrair os principais pontos levantados. Nesse sentido, o mapa temático abaixo mostra categoriza e resume o que foi coletado durante a entrevista.
 
-DEFINIÇÃO DE REQUISITOS DO PROJETO
-1 HISTÓRIAS DE USUÁRIO
-1.1 Pesquisas
+![image](https://github.com/user-attachments/assets/344f8733-f40e-4f80-ae45-ae46efd7766a)
+
+# DEFINIÇÃO DE REQUISITOS DO PROJETO
+## 1 HISTÓRIAS DE USUÁRIO
+### 1.1 Pesquisas
 Com base nas pesquisas anteriores, podemos nos pautar nos seguintes cenários para montar nossas histórias de usuário:
 Artigos → usuários precisam de interfaces claras e intuitivas para reduzir erros e aumentar a satisfação.
 Reportagens → clientes valorizam agilidade no pedido, redução de filas e acessibilidade.
-1.1.1  HU - Pedido Intuitivo
-Como cliente de cafeteria, quero visualizar um cardápio interativo em formato de quiz para que eu consiga montar meu pedido de forma simples e sem erros.
-1.1.2 HU - Agilidade no Atendimento
+#### 1.1.1  HU - Pedido Intuitivo
+Como cliente de cafeteria, quero visualizar um cardápio interativo em formato de quiz **para** que eu consiga montar meu pedido de forma simples e sem erros.
+#### 1.1.2 HU - Agilidade no Atendimento
 Como cliente em horário de pico, quero fazer meu pedido em um terminal digital para que eu não precise esperar na fila do caixa.
-1.1.3 HU - Acessibilidade e Inclusão
+#### 1.1.3 HU - Acessibilidade e Inclusão
 Como cliente estrangeiro ou com necessidades específicas, quero ter opções de idioma e interface clara para que eu consiga usar o sistema sem dificuldades.
-1.1.4 HU - Praticidade
+#### 1.1.4 HU - Praticidade
 Como cliente de um restaurante com alta demanda, quero realizar meu pedido de forma rápida e eficiente em uma comanda digital, para otimizar meu tempo de almoço sem depender de interação direta com o atendente.
-1.1.5 HU - Humanização/experiência intuitiva
+#### 1.1.5 HU - Humanização/experiência intuitiva
 Como cliente de uma cafeteria/doceria, quero fazer meu pedido em uma comanda digital humanizada enquanto permaneço sentado(a), para ser atendido sem precisar que o garçom anote manualmente, apenas trazendo meu pedido pronto.
-1.1.6 HU - Organização/eficiência
+#### 1.1.6 HU - Organização/eficiência
 Como balconista de um bar, quero ter mais controle e organização sobre os pedidos feitos pela comanda digital, para ganhar eficiência na ordem de preparo e entrega dos pedidos
 
-1.2 Entrevista
-	De acordo com a entrevista realizada, foram identificadas três histórias de usuários principais, as quais estão alinhadas com as críticas e expectativas pontuadas durante o levantamento de requisitos.
-1.2.1  HU - Tela Inicial Atrativa
+### 1.2 Entrevista
+De acordo com a entrevista realizada, foram identificadas três histórias de usuários principais, as quais estão alinhadas com as críticas e expectativas pontuadas durante o levantamento de requisitos.
+#### 1.2.1  HU - Tela Inicial Atrativa
 Como atendente que trabalha com a comanda digital, quero que a tela inicial seja mais interativa e atrativa para os clientes não confundirem com um painel.
 
-1.2.2 HU - Menu de Categorias Intuitivo
+#### 1.2.2 HU - Menu de Categorias Intuitivo
 Como cliente da comanda digital, quero que o menu de categorias exiba apenas produtos disponíveis na cafeteria, além de estar posicionado de maneira visível, para que o autoatendimento seja otimizado.
 
-1.2.3 HU - Informações Claras
+#### 1.2.3 HU - Informações Claras
 Como um cliente que não conhece os itens da comanda digital, quero que todos os produtos possuam uma descrição clara dos ingredientes e das opções para pessoas com restrições alimentares para facilitar a compreensão sobre os produtos oferecidos.
 	
-2 DIAGRAMA DE SEQUÊNCIA
-2.1 Pesquisas
-2.1.1 Diagrama HU1 (Pedido Intuitivo)
-	Diagramas de sequência inspirado na “HU - Pedido Intuitivo”, visando a montagem do pedido de forma simples e de modo a evitar possíveis erros. O diagrama foi feito no software Umbrello e possui a seguinte definição de agentes:
-Atores → Cliente;
-Objetos → Terminal de Autoatendimento, Sistema de Pedidos e Cozinha.
+## 2 DIAGRAMA DE SEQUÊNCIA
+### 2.1 Pesquisas
+#### 2.1.1 Diagrama HU1 (Pedido Intuitivo)
+Diagramas de sequência inspirado na “HU - Pedido Intuitivo”, visando a montagem do pedido de forma simples e de modo a evitar possíveis erros. O diagrama foi feito no software Umbrello e possui a seguinte definição de agentes:
 
-2.1.2 Diagrama  HU6 (Organização/eficiência)
-Atores → Balconista e cliente;
-Objetos → SistemasDePedidos, ComandaDigital e Cozinha;
-“Função”/Mensagem → fazerPedido(), enviarDadosDoPedido(), organizarPedidosPorOrdem, enviarPedidoParaPreparo(), confirmarRecebimento() e atualizarStatusPedido().
+**Atores →** Cliente;
 
+**Objetos →** Terminal de Autoatendimento, Sistema de Pedidos e Cozinha.
 
+![image](https://github.com/user-attachments/assets/0b96b9a3-ca42-4303-86d9-1bd0c8359e1d)
 
-2.2 Entrevista
+#### 2.1.2 Diagrama  HU6 (Organização/eficiência)
+**Atores →** Balconista e cliente;
+
+**Objetos →** SistemasDePedidos, ComandaDigital e Cozinha;
+
+**“Função”/Mensagem →** fazerPedido(), enviarDadosDoPedido(), organizarPedidosPorOrdem, enviarPedidoParaPreparo(), confirmarRecebimento() e atualizarStatusPedido().
+
+![image](https://github.com/user-attachments/assets/1753bcc3-4e33-49fd-817e-5562ceb44fa2)
+
+### 2.2 Entrevista
 Diagrama de sequência inspirado na “HU - Menu de Categorias Intuitivo”, visando descrever as ações que devem ser realizadas sequencialmente para que não apareçam para o usuário produtos indisponíveis no estoque. O diagrama foi feito no software StarUML, com a seguinte definição de agentes:
-Atores → Usuário, Sistema de Comanda Digital;
-Objetos → Cardápio, Estoque.
+
+**Atores →** Usuário, Sistema de Comanda Digital;
+
+**Objetos →** Cardápio, Estoque.
+
+![image](https://github.com/user-attachments/assets/b2103463-45dc-4022-80bd-77d15d569aaf)
 
 
+## 3 EMBASAMENTO NA PESQUISA ANTERIOR
+### 3.1 Pesquisas
+* **Sobre HU1 (pedido intuitivo):** 
+	* “Clear visualization methods within self-service systems significantly reduce ordering mistakes and enhance user satisfaction metrics.” (ScienceDirect, 2024)
+   
+* **Sobre HU2 (agilidade no atendimento):** 
+	* “Bojangles to roll out digital kiosks in 800+ stores to cut wait times and boost accuracy.” (The Sun, 2024)
+   
+* **Sobre HU3 (acessibilidade e inclusão):** 
+	* “Wendy’s introduces AI-powered multilingual drive-thru service.” (AllRecipes, 2025)
+   
+* **Sobre HU4 (praticidade):** 
+	* “This is a design philosophy that prioritises the human experience in the development of technology, with a focus on enhancing human well-being and capabilities rather than simply increasing technological functionality” (Siemon & Wolff, 2024, p.178).
+   
+* **Sobre HU5 (humanização/experiência intuitiva):**
+	* “Technology becomes more than a tool, but a natural extension of human activity that resonates deeply with individual and communal needs” (Norman & Stappers, 2015).
+   
+* **Sobre HU6 (organização/eficiência):**
+	* “A transformação do modelo convencional para o adaptável coloca a gestão de dados, derivada da tecnologia atual, como essencial para a rapidez e constância na tomada de decisão” (Dutra, 2022).
 
-3 EMBASAMENTO NA PESQUISA ANTERIOR
-3.1 Pesquisas
-Sobre HU1 (pedido intuitivo): 
-“Clear visualization methods within self-service systems significantly reduce ordering mistakes and enhance user satisfaction metrics.” (ScienceDirect, 2024)
-Sobre HU2 (agilidade no atendimento): 
-“Bojangles to roll out digital kiosks in 800+ stores to cut wait times and boost accuracy.” (The Sun, 2024)
-Sobre HU3 (acessibilidade e inclusão): 
-“Wendy’s introduces AI-powered multilingual drive-thru service.” (AllRecipes, 2025)
-Sobre HU4 (praticidade): 
-“This is a design philosophy that prioritises the human experience in the development of technology, with a focus on enhancing human well-being and capabilities rather than simply increasing technological functionality” (Siemon & Wolff, 2024, p.178).
-Sobre HU5 (humanização/experiência intuitiva):
-“Technology becomes more than a tool, but a natural extension of human activity that resonates deeply with individual and communal needs” (Norman & Stappers, 2015).
-Sobre HU6 (organização/eficiência):
-“A transformação do modelo convencional para o adaptável coloca a gestão de dados, derivada da tecnologia atual, como essencial para a rapidez e constância na tomada de decisão” (Dutra, 2022).
+### 3.2 Entrevista
+* **Sobre HU1 (tela inicial atrativa):** 
+	* Como mencionado durante a entrevista, a atendente comentou que alguns clientes não conseguem identificar que o totem se trata de um sistema interativo e dinâmico. Por isso, alguns entram no estabelecimento e ignoram essa tecnologia, inutilizando a comanda digital. Como saída, a tela inicial pode ter um design mais atrativo, com itens em movimento para chamar a atenção do usuário.
 
-3.2 Entrevista
-Sobre HU1 (tela inicial atrativa): 
-Como mencionado durante a entrevista, a atendente comentou que alguns clientes não conseguem identificar que o totem se trata de um sistema interativo e dinâmico. Por isso, alguns entram no estabelecimento e ignoram essa tecnologia, inutilizando a comanda digital. Como saída, a tela inicial pode ter um design mais atrativo, com itens em movimento para chamar a atenção do usuário.
+* **Sobre HU2 (menu de categorias intuitivo):** 
+	* De acordo com o que foi mencionado na entrevista, o menu de categorias está na lateral da comanda e alguns clientes não conseguem identificá-lo, prejudicando a experiência do usuário. Além disso, alguns produtos indisponíveis no estoque são mostrados e sugeridos de imediato, gerando frustração no cliente ao tentar comprar e perceber sua indisponibilidade.
 
-Sobre HU2 (menu de categorias intuitivo): 
-De acordo com o que foi mencionado na entrevista, o menu de categorias está na lateral da comanda e alguns clientes não conseguem identificá-lo, prejudicando a experiência do usuário. Além disso, alguns produtos indisponíveis no estoque são mostrados e sugeridos de imediato, gerando frustração no cliente ao tentar comprar e perceber sua indisponibilidade.
+* **Sobre HU3 (informações claras):** 
+	* Com base no que foi dito durante a entrevista, os clientes costumam tirar dúvidas com a atendente sobre ingredientes específicos dos itens comercializados, principalmente no que tange às opções para pessoas com intolerância alimentar. Por isso, informações claras e maior detalhamento dos produtos podem auxiliar o fluxo do autoatendimento.
 
-Sobre HU3 (informações claras): 
-Com base no que foi dito durante a entrevista, os clientes costumam tirar dúvidas com a atendente sobre ingredientes específicos dos itens comercializados, principalmente no que tange às opções para pessoas com intolerância alimentar. Por isso, informações claras e maior detalhamento dos produtos podem auxiliar o fluxo do autoatendimento.
-
-VALIDAÇÃO DE REQUISITOS DO PROJETO
-1 REVISÃO/INSPEÇÃO DE REQUISITOS
+# VALIDAÇÃO DE REQUISITOS DO PROJETO
+## 1 REVISÃO/INSPEÇÃO DE REQUISITOS
 Ao analisar as HU’s anteriormente levantadas, podemos definir cinco critérios de aceitação para cada uma delas, a fim de encontrar possíveis problemas, ambiguidades ou falhas. 
-1.1 Pesquisas
-HU1 - Pedido Intuitivo
-O sistema apresenta perguntas passo a passo (ex: tipo de bebida → tamanho → adicionais);
-O usuário consegue concluir o pedido em até 5 passos;
-Não há duplicidade ou conflito de opções (ex: leite sem lactose + leite integral);
-O usuário consegue voltar ao passo anterior do quiz sem perder as informações já selecionadas;
-O sistema exibe uma mensagem de erro clara se o usuário tentar selecionar opções conflitantes.
-HU2 - Agilidade no Atendimento
-O tempo médio de finalização do pedido deve ser inferior a 2 minutos;
-O sistema deve confirmar o pedido com número de protocolo ou senha;
-O pedido deve ser enviado automaticamente à cozinha;
-A confirmação do pedido (protocolo/senha) é exibida em um formato grande e legível para fácil visualização;
-O sistema fornece um feedback visual ou sonoro quando o pedido é enviado com sucesso à cozinha.
-HU3 - Acessibilidade e Inclusão
-O sistema oferece pelo menos 2 idiomas além do português;
-Os elementos visuais seguem boas práticas de contraste e legibilidade;
-O sistema é navegável apenas pelo toque, sem necessidade de teclado físico;
-A mudança de idioma é acessível e pode ser feita a qualquer momento do fluxo do pedido;
-A interface permite o uso de leitores de tela ou tecnologias assistivas.
-HU4 - Praticidade
-Pedido concluído em até 2 minutos;
-Confirmação imediata após envio;
-Exibição em tempo real para o atendente;
-Compatível com celular e tablet;
-Resumo do pedido antes de confirmar.
-HU5 - Humanização/experiência intuitiva)
-O pedido pode ser feito sentado;
-Interface fornece feedback visual/sonoro após ações;
-O sistema de comanda digital notifica para o cliente quando o pedido estiver pronto;
-O pedido é passado/transmitido ,imediatamente, para a cozinha para começar a fazer;
-Interface consistente em diferentes dispositivos.
-HU6 - Organização/eficiência
-Pedidos automaticamente são organizados por ordem de chegada;
- Balconista consegue visualizar os status dos pedidos solicitados;
-Sistema permite filtrar os pedidos por status (ex: em preparo, pronto, entregue);
-Atualização em tempo real para balcão e cliente (quando qualquer pedido é feito, tem atualização no sistema em tempo real, por isso vale para o cliente que pediu e para o balconista que está visualizando).
-Relatórios de pedidos concluídos no fim do dia (O que pode ser feito uma estatística sobre qual foi o item mais pedido por exemplo).
+### 1.1 Pesquisas
+* **HU1 - Pedido Intuitivo**
+	* O sistema apresenta perguntas passo a passo (ex: tipo de bebida → tamanho → adicionais);
+	* O usuário consegue concluir o pedido em até 5 passos;
+	* Não há duplicidade ou conflito de opções (ex: leite sem lactose + leite integral);
+	* O usuário consegue voltar ao passo anterior do quiz sem perder as informações já selecionadas;
+	* O sistema exibe uma mensagem de erro clara se o usuário tentar selecionar opções conflitantes.
+   
+* **HU2 - Agilidade no Atendimento**
+	* O tempo médio de finalização do pedido deve ser inferior a 2 minutos;
+	* O sistema deve confirmar o pedido com número de protocolo ou senha;
+	* O pedido deve ser enviado automaticamente à cozinha;
+	* A confirmação do pedido (protocolo/senha) é exibida em um formato grande e legível para fácil visualização;
+	* O sistema fornece um feedback visual ou sonoro quando o pedido é enviado com sucesso à cozinha.
+   
+* **HU3 - Acessibilidade e Inclusão**
+	* O sistema oferece pelo menos 2 idiomas além do português;
+	* Os elementos visuais seguem boas práticas de contraste e legibilidade;
+	* O sistema é navegável apenas pelo toque, sem necessidade de teclado físico;
+	* A mudança de idioma é acessível e pode ser feita a qualquer momento do fluxo do pedido;
+	* A interface permite o uso de leitores de tela ou tecnologias assistivas.
+   
+* **HU4 - Praticidade**
+	* Pedido concluído em até 2 minutos;
+	* Confirmação imediata após envio;
+	* Exibição em tempo real para o atendente;
+	* Compatível com celular e tablet;
+	* Resumo do pedido antes de confirmar.
+   
+* **HU5 - Humanização/experiência intuitiva)**
+	* O pedido pode ser feito sentado;
+	* Interface fornece feedback visual/sonoro após ações;
+	* O sistema de comanda digital notifica para o cliente quando o pedido estiver pronto;
+	* O pedido é passado/transmitido ,imediatamente, para a cozinha para começar a fazer;
+	* Interface consistente em diferentes dispositivos.
+   
+* **HU6 - Organização/eficiência**
+	* Pedidos automaticamente são organizados por ordem de chegada;
+ 	* Balconista consegue visualizar os status dos pedidos solicitados;
+	* Sistema permite filtrar os pedidos por status (ex: em preparo, pronto, entregue);
+	* Atualização em tempo real para balcão e cliente (quando qualquer pedido é feito, tem atualização no sistema em tempo real, por isso vale para o cliente que pediu e para o balconista que está visualizando).
+	* Relatórios de pedidos concluídos no fim do dia (O que pode ser feito uma estatística sobre qual foi o item mais pedido por exemplo).
 
-1.2 Entrevistas
-HU1 - Tela Inicial Atrativa
-Existe um botão chamativo na tela inicial que instigue o cliente a clicar e iniciar o autoatendimento;
-Os elementos da tela inicial são animados, ou seja, se movem para indicar que se trata de um software dinâmico;
-Existe uma frase de interação na tela inicial, como “O que você deseja comer hoje?” ou “Que tal escolher o seu próximo café?”;
-As sugestões dos produtos mais vendidos podem aparecer logo na tela inicial, instigando o usuário a ver mais itens;
-Pode haver um ícone de uma mãozinha na tela inicial sinalizando o movimento que o usuário deve realizar para iniciar o autoatendimento.
+### 1.2 Entrevistas
+* **HU1 - Tela Inicial Atrativa**
+	* Existe um botão chamativo na tela inicial que instigue o cliente a clicar e iniciar o autoatendimento;
+	* Os elementos da tela inicial são animados, ou seja, se movem para indicar que se trata de um software dinâmico;
+	* Existe uma frase de interação na tela inicial, como “O que você deseja comer hoje?” ou “Que tal escolher o seu próximo café?”;
+	* As sugestões dos produtos mais vendidos podem aparecer logo na tela inicial, instigando o usuário a ver mais itens;
+	* Pode haver um ícone de uma mãozinha na tela inicial sinalizando o movimento que o usuário deve realizar para iniciar o autoatendimento.
 
-HU2 - Menu de Categorias Intuitivo
-A segunda tela do sistema consiste no menu com todas as categorias de produtos disponíveis. Assim, o usuário inicia o autoatendimento filtrando a categoria que mais lhe agrada;
-Existe um ícone de menu no canto superior da tela durante todo o autoatendimento. Assim, o usuário consegue identificar onde fica o menu de categorias e pode acessá-lo sempre que for necessário;
-A seção de sugestões está separada dos itens exibidos em cada categoria do menu, a fim de que os clientes não confundam as duas coisas;
-Exibir apenas produtos que estejam disponíveis no estabelecimento. Para tanto, fazer uma verificação em tempo real do estoque da loja antes de exibir o produto para o usuário;
-Usar elementos chamativos para destacar as categorias de produtos, como ícones ou fontes características.
+* **HU2 - Menu de Categorias Intuitivo**
+	* A segunda tela do sistema consiste no menu com todas as categorias de produtos disponíveis. Assim, o usuário inicia o autoatendimento filtrando a categoria que mais lhe agrada;
+	* Existe um ícone de menu no canto superior da tela durante todo o autoatendimento. Assim, o usuário consegue identificar onde fica o menu de categorias e pode acessá-lo sempre que for necessário;
+	* A seção de sugestões está separada dos itens exibidos em cada categoria do menu, a fim de que os clientes não confundam as duas coisas;
+	* Exibir apenas produtos que estejam disponíveis no estabelecimento. Para tanto, fazer uma verificação em tempo real do estoque da loja antes de exibir o produto para o usuário;
+	* Usar elementos chamativos para destacar as categorias de produtos, como ícones ou fontes características.
 
-HU3 - Informações Claras
-Ao clicar no produto desejado, deve aparecer uma lista de ingredientes detalhada de cada produto no cardápio;
-Deve haver um selo na lateral de cada produto indicando se ele é “sem glúten”, “sem lactose”, etc;
-Dentre as categorias dos produtos, pode haver uma destinada para alimentos para pessoas com restrições alimentares;
-Assim que o usuário acessar a comanda, pode haver uma pequena pergunta para saber se ele tem restrição alimentar. Se tiver, o cardápio irá mostrar primeiro as opções para intolerantes;
-A fim de tornar a comanda mais descritiva, pode haver uma opção de descrição audiovisual para pessoas idosas ou com algum tipo de deficiência.
+* **HU3 - Informações Claras**
+	* Ao clicar no produto desejado, deve aparecer uma lista de ingredientes detalhada de cada produto no cardápio;
+	* Deve haver um selo na lateral de cada produto indicando se ele é “sem glúten”, “sem lactose”, etc;
+	* Dentre as categorias dos produtos, pode haver uma destinada para alimentos para pessoas com restrições alimentares;
+	* Assim que o usuário acessar a comanda, pode haver uma pequena pergunta para saber se ele tem restrição alimentar. Se tiver, o cardápio irá mostrar primeiro as opções para intolerantes;
+	* A fim de tornar a comanda mais descritiva, pode haver uma opção de descrição audiovisual para pessoas idosas ou com algum tipo de deficiência.
 
-2 PROTÓTIPO DE MÉDIA FIDELIDADE
-2.1 Pesquisas
-2.1.1 Fluxo de telas com base na HU1 à HU3
+## 2 PROTÓTIPO DE MÉDIA FIDELIDADE
+### 2.1 Pesquisas
+#### 2.1.1 Fluxo de telas com base na HU1 à HU3
 
+<img width="500" alt="fluxo_telas_v1" src="https://github.com/user-attachments/assets/c5f4f603-9f0c-4ff9-8da4-f2dbea32afe9" />
 
+<img width="500" alt="fluxo_telas_v1_1" src="https://github.com/user-attachments/assets/f2c27b54-0cc5-4405-b2b8-3aa72312d11a" />
 
+<img width="500" alt="fluxo_telas_v1_2" src="https://github.com/user-attachments/assets/bfdb3e37-14b9-414c-abca-802614a34f5c" />
 
+<img width="500" alt="fluxo_telas_v1_3" src="https://github.com/user-attachments/assets/1fb31b5b-0617-496b-8aed-4cba614af30b" />
 
+<img width="500" alt="fluxo_telas_v1_4" src="https://github.com/user-attachments/assets/64336547-c61a-457a-9434-18d791715983" />
 
+<img width="500" alt="fluxo_telas_v1_5" src="https://github.com/user-attachments/assets/0a897774-bb00-48ce-a32c-dea84ee3ac12" />
 
+<img width="500" alt="fluxo_telas_v1_6" src="https://github.com/user-attachments/assets/e3ae6340-da51-4d81-91a7-b5fc0dc1ae68" />
 
+#### 2.1.2 Como os artefatos atendem aos requisitos
+* **HU1 – Cliente realiza pedido pelo quiz interativo**
+	* A navegação em formato de quiz demonstra a aplicação prática da HU1, garantindo clareza e orientação passo a passo para o usuário. Ao longo da navegação, as perguntas são apresentadas de maneira sequencial e, para confirmar o pedido, o usuário passa por cinco passos principais: seleção, tamanho, quantidade, extras e confirmação. Os tipos de itens são especificados na etapa de seleção, assim cada item é previamente categorizado a fim de evitar conflito de opções. Além disso, em todas as etapas da montagem do pedido, é exibido um botão do canto superior esquerdo da tela que permite ao usuário voltar à etapa anterior. Em todas as etapas, um resumo do pedido é exibido ao cliente, de modo que ele possa acompanhar a situação do pedido (esse resumo é mantido mesmo que ele tenha voltado uma etapa atrás). 
 
+* **HU2 - Cliente faz pedido com o máximo de agilidade e clareza**
+	* Com base nas perguntas rápidas, organizadas em cinco etapas principais, o tempo médio de finalização do pedido é de aproximadamente 2 minutos ou menos (variando conforme o nível de decisão do usuário em relação ao que deseja pedir). Após a confirmação, é exibida uma tela com a mensagem “Pedido confirmado!”, acompanhada de um bloco contendo o número do pedido (protocolo) em fonte grande e legível. Nessa mesma tela, também são apresentadas informações sobre o tempo estimado de espera e o local de retirada. Além disso, aparece o aviso de que o pedido será preparado e, portanto, enviado à cozinha. Embora isso não possa ser percebido na imagem estática da última tela, pode ser implementado um retorno sonoro como complemento para sinalizar a confirmação.
+   
+* **HU3 - Cliente tem acessibilidade durante todo o processo**
+	* Tanto a tela inicial quanto às demais telas de seleção, possuem um alto contraste, alcançado pela junção do fundo branco, botões grandes e amarelos, com fontes igualmente grandes e legíveis. Na tela inicial, o usuário tem a opção de navegar em outros dois idiomas além do português, sendo estes o inglês e espanhol, dispostos pelos ícones das bandeiras do respectivo país na parte inferior da tela. Apesar de só mostrado na tela inicial, a ideia é que essa mudança seja possível em todas as etapas do pedido. Além disso, todo o sistema é projetado para funcionar em totem/quiosques, que são aparelhos navegáveis pelo toque. Por fim, leitores de tela podem ser implementados como opções adicionais junto aos ícones de idioma, e também estariam disponíveis durante todo o período de navegação.
+   
+#### 2.1.3 Fluxo de telas com base na HU4
 
-2.1.2 Como os artefatos atendem aos requisitos
-HU1 – Cliente realiza pedido pelo quiz interativo
-A navegação em formato de quiz demonstra a aplicação prática da HU1, garantindo clareza e orientação passo a passo para o usuário. Ao longo da navegação, as perguntas são apresentadas de maneira sequencial e, para confirmar o pedido, o usuário passa por cinco passos principais: seleção, tamanho, quantidade, extras e confirmação. Os tipos de itens são especificados na etapa de seleção, assim cada item é previamente categorizado a fim de evitar conflito de opções. Além disso, em todas as etapas da montagem do pedido, é exibido um botão do canto superior esquerdo da tela que permite ao usuário voltar à etapa anterior. Em todas as etapas, um resumo do pedido é exibido ao cliente, de modo que ele possa acompanhar a situação do pedido (esse resumo é mantido mesmo que ele tenha voltado uma etapa atrás). 
+<img width="500" alt="1" src="https://github.com/user-attachments/assets/57eea566-045a-4cfb-af48-d5ea4af98c5a" />
+<img width="500" alt="2" src="https://github.com/user-attachments/assets/8daa93c6-23aa-4839-9370-e9aa27fcd0b9" />
+<img width="500" alt="3" src="https://github.com/user-attachments/assets/fa34db69-0fcf-487b-83b7-3d3b95c01066" />
+<img width="500" alt="4" src="https://github.com/user-attachments/assets/5b8a945f-fa10-4806-b1cd-cf5932fd4298" />
+<img width="500" alt="5" src="https://github.com/user-attachments/assets/fb8fc8cc-397d-4896-9e01-a690ea5de536" />
 
-HU2 - Cliente faz pedido com o máximo de agilidade e clareza
-	Com base nas perguntas rápidas, organizadas em cinco etapas principais, o tempo médio de finalização do pedido é de aproximadamente 2 minutos ou menos (variando conforme o nível de decisão do usuário em relação ao que deseja pedir). Após a confirmação, é exibida uma tela com a mensagem “Pedido confirmado!”, acompanhada de um bloco contendo o número do pedido (protocolo) em fonte grande e legível. Nessa mesma tela, também são apresentadas informações sobre o tempo estimado de espera e o local de retirada. Além disso, aparece o aviso de que o pedido será preparado e, portanto, enviado à cozinha. Embora isso não possa ser percebido na imagem estática da última tela, pode ser implementado um retorno sonoro como complemento para sinalizar a confirmação.
-HU3 - Cliente tem acessibilidade durante todo o processo
-	Tanto a tela inicial quanto às demais telas de seleção, possuem um alto contraste, alcançado pela junção do fundo branco, botões grandes e amarelos, com fontes igualmente grandes e legíveis. Na tela inicial, o usuário tem a opção de navegar em outros dois idiomas além do português, sendo estes o inglês e espanhol, dispostos pelos ícones das bandeiras do respectivo país na parte inferior da tela. Apesar de só mostrado na tela inicial, a ideia é que essa mudança seja possível em todas as etapas do pedido. Além disso, todo o sistema é projetado para funcionar em totem/quiosques, que são aparelhos navegáveis pelo toque. Por fim, leitores de tela podem ser implementados como opções adicionais junto aos ícones de idioma, e também estariam disponíveis durante todo o período de navegação.
-2.1.3 Fluxo de telas com base na HU4
-
-
-
-
-
-
-
-
-
-
-2.1.4 Como os artefatos atendem aos requisitos
-HU4 - Tela inicial intuitiva/Menu dos pedidos/Carrinho e resumo do pedido/Tela de confirmação.
-A história de usuário utilizada para o desenvolvimento do fluxo foi a quarta, na qual o cliente, utilizando o próprio celular ou um tablet disponibilizado pelo estabelecimento como comanda digital, tem a possibilidade de iniciar o seu pedido de forma mais prática e autônoma. Neste processo, o cliente pode escolher o prato desejado para o almoço, visualizar em tempo real todos os itens adicionados ao pedido, ter a oportunidade de revisá-los com calma, realizar alterações caso seja necessário e até mesmo cancelar antes da finalização, garantindo maior flexibilidade e controle com base na experiência.
+#### 2.1.4 Como os artefatos atendem aos requisitos
+* **HU4 - Tela inicial intuitiva/Menu dos pedidos/Carrinho e resumo do pedido/Tela de confirmação.**
+	* A história de usuário utilizada para o desenvolvimento do fluxo foi a quarta, na qual o cliente, utilizando o próprio celular ou um tablet disponibilizado pelo estabelecimento como comanda digital, tem a possibilidade de iniciar o seu pedido de forma mais prática e autônoma. Neste processo, o cliente pode escolher o prato desejado para o almoço, visualizar em tempo real todos os itens adicionados ao pedido, ter a oportunidade de revisá-los com calma, realizar alterações caso seja necessário e até mesmo cancelar antes da finalização, garantindo maior flexibilidade e controle com base na experiência.
 Ao concluir o pedido, o sistema gera automaticamente a previsão do tempo estimado para que o prato fique pronto, além de disponibilizar uma tela de acompanhamento, na qual o cliente pode consultar o andamento da preparação. Essa funcionalidade proporciona maior transparência e tranquilidade, pois o consumidor sabe exatamente o que esperar em relação ao prazo de entrega e consegue se planejar melhor durante a sua refeição.
 Esta abordagem está totalmente alinhada com os critérios de aceitação definidos, uma vez que o processo de solicitação é rápido, intuitivo e imediato, evitando filas, esperas desnecessárias ou a necessidade de intervenção de atendentes. Além disso, o pedido confirmado passa a integrar o sistema de maneira instantânea, garantindo integração entre cliente e cozinha de forma eficiente e confiável.
 Outro ponto relevante é a compatibilidade multiplataforma,na qual a solução foi pensada para rodar tanto em celulares quanto em tablets disponíveis no estabelecimento, oferecendo versatilidade e facilidade de uso. Dessa forma, promove-se uma experiência moderna e digitalizada para o cliente, além de otimizar o fluxo interno dos restaurantes, já que os pedidos chegam organizados e estruturados, reduzindo erros de comunicação e aumentando a agilidade do serviço.
 Portanto, a implementação dessa história de usuário demonstra não apenas o cumprimento dos requisitos técnicos e funcionais propostos, mas também o valor agregado à jornada do cliente que passa a ser mais fluida, interativa e satisfatória, ao mesmo tempo em que fortalece a eficiência operacional do estabelecimento
-2.2 Entrevista
-2.2.1 Fluxo de telas com base na HU1 à HU3
 
+### 2.2 Entrevista
+#### 2.2.1 Fluxo de telas com base na HU1 à HU3
 
+<img width="500" alt="iPhone 14   15 Pro Max - 1 (1)" src="https://github.com/user-attachments/assets/0311c4e7-b967-40b3-9042-1c9710778c43" />
 
+<img width="500" alt="iPhone 14   15 Pro Max - 2 (2)" src="https://github.com/user-attachments/assets/7356c1a4-aad6-4a33-954f-52a3e843bf40" />
 
+<img width="500" alt="iPhone 14   15 Pro Max - 2 (3)" src="https://github.com/user-attachments/assets/5eaa169f-08d7-4965-83f4-0ec42a0e3c09" />
 
-2.2.2 Como os artefatos atendem aos requisitos
-HU1 - Tela Inicial Atrativa
-Conforme a primeira imagem do fluxo de telas pautado na entrevista, a tela inicial projetada apresenta um ícone grande de uma mãozinha, sinalizando que o usuário pode interagir diretamente com ela. Por se tratar de um protótipo de média fidelidade, a imagem possui dois círculos concêntricos ao redor desse ícone, os quais geram a ideia de movimento. Evidentemente, a versão final terá animações reais que geram esse efeito de maneira fidedigna. Além disso, também há uma frase de interação direta com o usuário, incentivando-o a iniciar o seu autoatendimento. Por hora, as sugestões de produtos não foram colocadas na tela inicial para evitar poluição visual, mas isso pode ser alterado futuramente em versões mais sofisticadas.
+<img width="500" alt="iPhone 14   15 Pro Max - 3 (1)" src="https://github.com/user-attachments/assets/8fe66daa-432d-4c37-9a5f-65dcf5879fdb" />
 
-HU2 - Menu de Categorias Intuitivo
-	Além da tela inicial, a segunda partição da primeira imagem do fluxo de telas apresenta o menu principal, onde o usuário pode transitar pelas categorias de produtos disponíveis no estabelecimento. Como a tela inteira é destinada apenas para as categorias de produtos, o usuário não irá se confundir com nenhuma outra funcionalidade do sistema. Além disso, as sugestões de produtos foram colocadas de maneira intuitiva e clara, a fim de que o cliente possa entender do que se trata. Por fim, o menu de categorias é exibido assim que o usuário inicia o autoatendimento, facilitando e filtrando a escolha do seu pedido. Ele também pode retornar a esse menu em qualquer etapa do atendimento, visto que há um ícone de menu no canto superior da tela.
+<img width="500" alt="iPhone 14   15 Pro Max - 4 (1)" src="https://github.com/user-attachments/assets/478a01de-9284-4600-8655-2fb649fe551e" />
 
-HU3 - Informações Claras
-	A segunda figura do fluxo de telas mostra o cardápio de uma das categorias disponíveis e a exibição de um produto específico. No primeiro caso, existem selos ao lado das imagens dos produtos, indicando se o produto está entre os mais vendidos ou possui opção para pessoas com algum tipo de intolerância. Quando o usuário seleciona o produto, aparece uma janela flutuante com uma descrição detalhada dos ingredientes do item selecionado, além de opções alternativas daquele produto. Por hora, não foi criada uma categoria exclusiva para alimentos com opções para intolerantes, pois a lista de opções e o selo já atendem a essa especificação. Contudo, isso pode ser otimizado em versões futuras da comanda digital. Além disso, um ícone de microfone pode ser adicionado em todas telas da comanda para sinalizar descrição audiovisual, conforme pontuado nos critérios de aceitação da terceira história de usuário.
+#### 2.2.2 Como os artefatos atendem aos requisitos
+* **HU1 - Tela Inicial Atrativa**
+	* Conforme a primeira imagem do fluxo de telas pautado na entrevista, a tela inicial projetada apresenta um ícone grande de uma mãozinha, sinalizando que o usuário pode interagir diretamente com ela. Por se tratar de um protótipo de média fidelidade, a imagem possui dois círculos concêntricos ao redor desse ícone, os quais geram a ideia de movimento. Evidentemente, a versão final terá animações reais que geram esse efeito de maneira fidedigna. Além disso, também há uma frase de interação direta com o usuário, incentivando-o a iniciar o seu autoatendimento. Por hora, as sugestões de produtos não foram colocadas na tela inicial para evitar poluição visual, mas isso pode ser alterado futuramente em versões mais sofisticadas.
 
+* **HU2 - Menu de Categorias Intuitivo**
+	* Além da tela inicial, a segunda partição da primeira imagem do fluxo de telas apresenta o menu principal, onde o usuário pode transitar pelas categorias de produtos disponíveis no estabelecimento. Como a tela inteira é destinada apenas para as categorias de produtos, o usuário não irá se confundir com nenhuma outra funcionalidade do sistema. Além disso, as sugestões de produtos foram colocadas de maneira intuitiva e clara, a fim de que o cliente possa entender do que se trata. Por fim, o menu de categorias é exibido assim que o usuário inicia o autoatendimento, facilitando e filtrando a escolha do seu pedido. Ele também pode retornar a esse menu em qualquer etapa do atendimento, visto que há um ícone de menu no canto superior da tela.
 
-ITERAÇÃO NA 
-ENGENHARIA DE REQUISITOS
-1 PROCESSO DE GERENCIAMENTO
+* **HU3 - Informações Claras**
+	* A segunda figura do fluxo de telas mostra o cardápio de uma das categorias disponíveis e a exibição de um produto específico. No primeiro caso, existem selos ao lado das imagens dos produtos, indicando se o produto está entre os mais vendidos ou possui opção para pessoas com algum tipo de intolerância. Quando o usuário seleciona o produto, aparece uma janela flutuante com uma descrição detalhada dos ingredientes do item selecionado, além de opções alternativas daquele produto. Por hora, não foi criada uma categoria exclusiva para alimentos com opções para intolerantes, pois a lista de opções e o selo já atendem a essa especificação. Contudo, isso pode ser otimizado em versões futuras da comanda digital. Além disso, um ícone de microfone pode ser adicionado em todas telas da comanda para sinalizar descrição audiovisual, conforme pontuado nos critérios de aceitação da terceira história de usuário.
+
+# ITERAÇÃO NA ENGENHARIA DE REQUISITOS
+## 1 PROCESSO DE GERENCIAMENTO
 Quando surge a necessidade de adicionar uma nova funcionalidade ou promover uma melhoria no sistema, o primeiro passo é especificar claramente a mudança, definindo o que será incluído, ou alterado e, a partir disto, criar uma nova história de usuário com critérios de aceitação objetivos, que permitam validar se a alteração atende ao propósito desejado. Em seguida, deve-se realizar uma análise de impacto, avaliando como a mudança poderá afetar o funcionamento geral do sistema, incluindo possíveis riscos de falhas, necessidade de refatoração, interrupção do serviço, aumento de custos ou atrasos no cronograma.
 Essa análise deve considerar não apenas a operação direta da nova funcionalidade, mas também como ela interage com fluxos existentes, garantindo que a experiência do usuário e a integridade do sistema não sejam comprometidas. Com base nessa avaliação, decide-se se a mudança é viável e segura para implementação. 
 Caso seja aprovada, os requisitos existentes devem ser revisados e ajustados para incorporar a alteração de forma coerente, assegurando que o sistema continue funcionando corretamente e de maneira eficiente. Finalmente, a implementação deve ocorrer de forma controlada, acompanhada de testes e validações, de modo a minimizar impactos negativos, preservar a estabilidade do sistema e garantir que a nova funcionalidade traga benefícios claros para os usuários.
 
-2 RASTREABILIDADE
-	Durante o levantamento de requisitos, o projeto contemplou múltiplas formas para identificar características e especificações necessárias em uma comanda digital. Assim, uma maneira viável de rastrear mudanças nos requisitos do projeto consiste em acompanhar pesquisas, reportagens e a dinâmica do mercado para entender as novas demandas que surgem e impactam o uso da comanda digital. Além disso, quando o sistema for implementado na prática ou testado por um usuário, pode-se coletar feedbacks que evidenciam a experiência do usuário e apontam possíveis melhorias a serem realizadas. Para tanto, a comanda digital pode ter uma seção de “Reportar problema”, onde o usuário pode descrever bugs ou solicitar novas funcionalidades. Ademais, a comanda digital pode solicitar uma avaliação do usuário ao fim de cada atendimento, onde ele pode avaliar o sistema em uma escala de 1 a 5 e deixar um comentário opcional sobre sua experiência durante o autoatendimento. À medida que esses dados forem coletados, eles podem ser analisados e julgados como pertinentes ou não.
+## 2 RASTREABILIDADE
+Durante o levantamento de requisitos, o projeto contemplou múltiplas formas para identificar características e especificações necessárias em uma comanda digital. Assim, uma maneira viável de rastrear mudanças nos requisitos do projeto consiste em acompanhar pesquisas, reportagens e a dinâmica do mercado para entender as novas demandas que surgem e impactam o uso da comanda digital. Além disso, quando o sistema for implementado na prática ou testado por um usuário, pode-se coletar feedbacks que evidenciam a experiência do usuário e apontam possíveis melhorias a serem realizadas. Para tanto, a comanda digital pode ter uma seção de “Reportar problema”, onde o usuário pode descrever bugs ou solicitar novas funcionalidades. Ademais, a comanda digital pode solicitar uma avaliação do usuário ao fim de cada atendimento, onde ele pode avaliar o sistema em uma escala de 1 a 5 e deixar um comentário opcional sobre sua experiência durante o autoatendimento. À medida que esses dados forem coletados, eles podem ser analisados e julgados como pertinentes ou não.
 
-3 FERRAMENTAS
-	As mudanças registradas e implementadas nos requisitos da comanda podem ser documentadas no repositório do github do projeto, onde existe o versionamento completo da comanda, desde os seus requisitos iniciais até a versão mais recente. Além disso, caso seja implementada a funcionalidade “Reportar problema” na comanda ou a avaliação rápida ao fim de cada atendimento, os dados coletados podem ser registrados em um banco de dados, onde serão armazenadas possíveis mudanças solicitadas para o projeto.
+## 3 FERRAMENTAS
+As mudanças registradas e implementadas nos requisitos da comanda podem ser documentadas no repositório do github do projeto, onde existe o versionamento completo da comanda, desde os seus requisitos iniciais até a versão mais recente. Além disso, caso seja implementada a funcionalidade “Reportar problema” na comanda ou a avaliação rápida ao fim de cada atendimento, os dados coletados podem ser registrados em um banco de dados, onde serão armazenadas possíveis mudanças solicitadas para o projeto.
