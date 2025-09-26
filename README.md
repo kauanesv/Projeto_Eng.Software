@@ -7,18 +7,22 @@ Este projeto visa desenvolver um sistema de comanda digital humanizada, a fim de
 ## 2 TÉCNICA
 Nós vamos utilizar partes do modelo ágil de projeto Scrum, o qual vamos seguir os seguintes conceitos:
 
+Sprint planning (reunião de planejamentos): Consta o momento em que o fizemos o levantamento de requisitos desejados para o projeto e definimos as tarefas.
 
-Sprint planning (reunião de planejamentos): Consta o momento em que o fizemos o levantamento de requisitos desejados para o projeto e definimos as tarefas;
 Sprint planning parte 1 (Team) : define o que vai ser feito. Nesta parte, nós apresentamos com uma visão de negócio os itens do Product Backlog com maior prioridade. Nós fazemos perguntas/pesquisas/observações para entender e rascunhar possíveis soluções técnicas. Uma vez que os itens apresentados irão formar o Sprint Backlog.
+
 Sprint Goal: Em conjunto nós o Scrum Team vamos definir uma meta para o Sprint. Uma boa meta do Sprint é descrita em um ou duas frases no máximo. Ela deve descrever o que o time deve alcançar durante o Sprint.
 
 Sprint planning parte 2 (Team):  define como vai ser desenvolvido.  
 Nós pegamos os itens selecionados na Parte 1 e quebramos em tarefas técnicas no Sprint Backlog.
 É feito o detalhamento necessário: dependências, estimativas, estratégias de implementação e divisão do trabalho.
 Nós como um time garantimos que o processo siga os princípios do Scrum.
+
 Sprint: é um ciclo curto e com tempo definido (geralmente de uma a quatro semanas) em que nós trabalhamos para completar um incremento de produto utilizável.
 Cada Sprint funciona como um mini-projeto, com planejamento, execução, revisão e retrospectiva. O objetivo é manter o foco, gerar entregas de valor de forma contínua e permitir ajustes rápidos com base no feedback e na realidade do mercado
+
 Sprint review (reunião de revisão): demonstração de resultados e feedbacks para validar a entrega;
+
 Sprint retrospective (reunião de retrospectiva): análise sobre o desempenho da equipe e os resultados do projeto.
 ## 3 VIABILIDADE TEMPORAL
 O desenvolvimento de um sistema de comanda digital humanizado, no formato de quiz e cardápio interativo, é plenamente viável dentro do semestre letivo vigente. Considerando que não haverá integração com meios de pagamento, o escopo do projeto se torna mais enxuto, permitindo foco na interação com o usuário e na geração do pedido. O cronograma pode ser dividido em quatro fases:
@@ -58,14 +62,24 @@ Consumidor Moderno (2024) — “O verdadeiro significado de uma tecnologia huma
 MIT Technology Review (2022) — “Tecnologia e Cultura humanizada a serviço da vida”
 ### 1.5 Como a Seleção Contribuiu para os Requisitos do Projeto
 A proposta do sistema é altamente relevante, pois une tecnologia digital de autoatendimento com humanização da experiência do usuário. No setor de alimentação, soluções de pedidos digitais têm crescido de forma expressiva, melhorando a eficiência operacional, reduzindo erros e aumentando a satisfação dos clientes.
+
 Estudos acadêmicos reforçam essa importância. O artigo selecionado (ScienceDirect, 2024) demonstra como sistemas de autoatendimento com interfaces intuitivas e visualmente claras reduzem erros e elevam indicadores de satisfação:
+
 “Clear visualization methods within self-service systems significantly reduce ordering mistakes and enhance user satisfaction metrics.”
-Além disso, notícias de mercado mostram a relevância prática da temática. A rede Bojangles anunciou a implantação de quiosques digitais em mais de 800 unidades, visando reduzir filas e aumentar a precisão dos pedidos (The Sun, 2024). Da mesma forma, a Wendy’s passou a utilizar inteligência artificial em seus drive-thrus para oferecer atendimento multilíngue e mais inclusivo (AllRecipes, 2025).
+
+Além disso, notícias de mercado mostram a relevância prática da temática. A rede Bojangles anunciou a implantação de quiosques digitais em mais de 800 unidades, visando reduzir filas e aumentar a precisão dos pedidos (The Sun, 2024).
+Da mesma forma, a Wendy’s passou a utilizar inteligência artificial em seus drive-thrus para oferecer atendimento multilíngue e mais inclusivo (AllRecipes, 2025).
+
 Esses exemplos evidenciam que grandes redes já exploram tecnologias digitais para melhorar a jornada do cliente, validando a relevância prática e mercadológica do sistema proposto. Ao adaptar esse conceito ao contexto de uma cafeteria, com foco em humanização e interatividade, o projeto se mostra inovador, viável e alinhado às tendências globais de digitalização no setor de alimentação.
+
 A seleção do artigo Humanization of Digital Technologies leva aos requisitos do nosso projeto, pois nós vamos fazer uma comanda digital humanizada, logo entender o porquê de ter uma e integrá-lá na sociedade é um papel importante. O desenvolvimento de uma tecnologia, no nosso caso a comanda digital humanizada, permite que  o cliente tenha uma experiência focada mais no seu nos seus desejos e necessidades por estar usando uma tecnologia, e não de fato só existir uma tecnologia mas que ninguém sabe usá-la, a não ser pessoas especializadas ou que trabalho na área. Segundo Siemon e Wolff (2024), “This is a design philosophy that prioritises the human experience in the development of technology, with a focus on enhancing human well-being and capabilities rather than simply increasing technological functionality” (p. 178).
+
 Tendo em vista, as ideias sobre os requisitos, vamos focalizar o nosso desenvolvimento em uma tecnologia que vai ajudar na experiência do cliente que frequenta o lugar que tem a comanda digital humanizada. E isto está longe de tirar o emprego de alguém, a ideia de ter uma tecnologia humanizada, está na ideia de expandir a interação entre o humano e a máquina de forma que haja benefícios para a sociedade e para que atraia mais cliente, neste caso em específico. E com isto, quem trabalhasse na lugar que foi implementado o projeto, teria mais facilidade de coordenar os pedidos dos clientes, rapidez no acesso ao pedido e afins. E esta ideia se confirma com, (Cramer, 2015; Jandrić et al., 2018) “This perspective encourages technologies that adapt to and enhance human practices, rather than overshadowing or replacing them.”
+
 Em suma, a acessibilidade para que o humano se beneficie da tecnologia desenvolvida é estabelecida no que diz respeito a respeito da comanda digital humanizada. Onde é natural o uso da tecnologia ao nosso favor, e não como uma ferramenta apenas para tarefas específicas, pois segundo Norman & Stappers (2015) ”technology becomes more than a tool, but a natural extension of human activity that resonates deeply with individual and communal needs.”
+
 Com isto, ao analisar o cenário atual, para que haja uma interconexão entre o humano e a tecnologia, é necessária uma adaptação para atender às necessidades do cotidiano. Esse papel cabe a nós: selecionar estratégias que facilitem e acelerem a ação do cliente, aumentando sua satisfação pós-uso do produto desenvolvido, substituindo, neste caso, o modelo convencional que, apesar de funcional, não contempla e não inclui a sociedade de fato em seu desenvolvimento. Isso está em concordância com o nosso projeto, pois, segundo Dutra (2022), “a transformação do modelo convencional para o adaptável coloca a gestão de dados, derivada da tecnologia atual, como essencial para a rapidez e constância na tomada de decisão, cujo núcleo estratégico é a criação e a entrega de valor para o cliente.”
+
 Observando o cenário atual, a eficiência para o cliente é mais valorizada do que as especificidades técnicas do dispositivo em si. Com isto, “A humanização da tecnologia não está na forma ou no design estético de um dispositivo, mas na sua capacidade de entender o contexto da vida das pessoas, oferecendo soluções no momento exato em que são necessárias” (CONSUMIDOR MODERNO, 2023).
 
 ## 2 ENTREVISTA
@@ -73,7 +87,7 @@ Observando o cenário atual, a eficiência para o cliente é mais valorizada do 
 Foi realizada uma entrevista semi-estruturada com a atendente da Mais1Café da unidade de Apucarana, a fim de entender melhor a experiência dos clientes com a comanda digital do estabelecimento. A Mais1Café consiste em uma rede especializada em cafés que se destaca pelo seu visual jovem e moderno. Seu atendimento é baseado em uma comanda digital disponibilizada em totens, os quais podem ser utilizados pelos clientes durante o atendimento nas lojas físicas.
  
 ### 2.2 Roteiro da Entrevista
-	O roteiro da entrevista foi montado com o intuito de abranger os principais aspectos do público-alvo da Mais1Café e do sistema de comanda digital utilizado no estabelecimento. Ele foi elaborado a fim de manter a entrevistada confortável durante o processo e entender o ponto de vista dela em relação ao tema abordado, visto que se trata de uma pessoa que interage com a comanda digital diariamente. Por se tratar de uma entrevista semi-estruturada, a entrevista não se prendeu exclusivamente às perguntas abaixo, de modo que ajustes foram realizados em tempo real sempre que necessário.
+O roteiro da entrevista foi montado com o intuito de abranger os principais aspectos do público-alvo da Mais1Café e do sistema de comanda digital utilizado no estabelecimento. Ele foi elaborado a fim de manter a entrevistada confortável durante o processo e entender o ponto de vista dela em relação ao tema abordado, visto que se trata de uma pessoa que interage com a comanda digital diariamente. Por se tratar de uma entrevista semi-estruturada, a entrevista não se prendeu exclusivamente às perguntas abaixo, de modo que ajustes foram realizados em tempo real sempre que necessário.
 2.2.1 Apresentação
 Explicar o propósito da entrevista, a fim de contextualizar o entrevistado e deixá-lo confortável a respeito da precedência das perguntas.
 
