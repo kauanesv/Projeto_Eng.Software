@@ -5,62 +5,84 @@
 Este projeto visa desenvolver um sistema de comanda digital humanizada, a fim de otimizar o atendimento em cafeterias, restaurantes, lanchonetes e similares. Para tanto, objetiva-se desenvolver um sistema com interface gráfica que permita ao usuário visualizar o cardápio e realizar o pedido de maneira intuitiva, dinâmica e rápida, sem precisar do auxílio contínuo de um atendente. A fim de facilitar o desenvolvimento do protótipo, pretende-se desenvolver uma comanda digital inspirada em uma cafeteria, mas os componentes do software podem ser reaproveitados em outros tipos de estabelecimentos comerciais.
 
 ## 2 TÉCNICA
+
 Nós vamos utilizar partes do modelo ágil de projeto Scrum, o qual vamos seguir os seguintes conceitos:
 
-Sprint planning (reunião de planejamentos): Consta o momento em que o fizemos o levantamento de requisitos desejados para o projeto e definimos as tarefas.
+* Sprint planning (reunião de planejamentos): Consta o momento em que o fizemos o levantamento de requisitos desejados para o projeto e definimos as tarefas.
 
-Sprint planning parte 1 (Team) : define o que vai ser feito. Nesta parte, nós apresentamos com uma visão de negócio os itens do Product Backlog com maior prioridade. Nós fazemos perguntas/pesquisas/observações para entender e rascunhar possíveis soluções técnicas. Uma vez que os itens apresentados irão formar o Sprint Backlog.
+* Sprint planning parte 1 (Team) : define o que vai ser feito. Nesta parte, nós apresentamos com uma visão de negócio os itens do Product Backlog com maior prioridade. Nós fazemos perguntas/pesquisas/observações para entender e rascunhar possíveis soluções técnicas. Uma vez que os itens apresentados irão formar o Sprint Backlog.
 
-Sprint Goal: Em conjunto nós o Scrum Team vamos definir uma meta para o Sprint. Uma boa meta do Sprint é descrita em um ou duas frases no máximo. Ela deve descrever o que o time deve alcançar durante o Sprint.
+* Sprint Goal: Em conjunto nós o Scrum Team vamos definir uma meta para o Sprint. Uma boa meta do Sprint é descrita em um ou duas frases no máximo. Ela deve descrever o que o time deve alcançar durante o Sprint.
 
-Sprint planning parte 2 (Team):  define como vai ser desenvolvido.  
+* Sprint planning parte 2 (Team):  define como vai ser desenvolvido.  
 Nós pegamos os itens selecionados na Parte 1 e quebramos em tarefas técnicas no Sprint Backlog.
 É feito o detalhamento necessário: dependências, estimativas, estratégias de implementação e divisão do trabalho.
 Nós como um time garantimos que o processo siga os princípios do Scrum.
 
-Sprint: é um ciclo curto e com tempo definido (geralmente de uma a quatro semanas) em que nós trabalhamos para completar um incremento de produto utilizável.
+* Sprint: é um ciclo curto e com tempo definido (geralmente de uma a quatro semanas) em que nós trabalhamos para completar um incremento de produto utilizável.
 Cada Sprint funciona como um mini-projeto, com planejamento, execução, revisão e retrospectiva. O objetivo é manter o foco, gerar entregas de valor de forma contínua e permitir ajustes rápidos com base no feedback e na realidade do mercado
 
-Sprint review (reunião de revisão): demonstração de resultados e feedbacks para validar a entrega;
+* Sprint review (reunião de revisão): demonstração de resultados e feedbacks para validar a entrega;
 
-Sprint retrospective (reunião de retrospectiva): análise sobre o desempenho da equipe e os resultados do projeto.
+* Sprint retrospective (reunião de retrospectiva): análise sobre o desempenho da equipe e os resultados do projeto.
+  
 ## 3 VIABILIDADE TEMPORAL
 O desenvolvimento de um sistema de comanda digital humanizado, no formato de quiz e cardápio interativo, é plenamente viável dentro do semestre letivo vigente. Considerando que não haverá integração com meios de pagamento, o escopo do projeto se torna mais enxuto, permitindo foco na interação com o usuário e na geração do pedido. O cronograma pode ser dividido em quatro fases:
-Planejamento e prototipagem (setembro, 2–3 semanas): definição do fluxo de uso, design das telas em ferramentas como Figma e organização da base de dados.
-Desenvolvimento do MVP (outubro, 4 semanas): implementação do quiz, cardápio interativo e resumo do pedido em frontend utilizando HTML e CSS, com backend em JavaScript.
-Testes e ajustes (novembro, 3 semanas): aplicação de testes de usabilidade, correção de erros e refinamento da interface.
-Entrega e apresentação (final de novembro, 1 semana): apresentação da solução.
+
+1. Planejamento e prototipagem (setembro, 2–3 semanas): definição do fluxo de uso, design das telas em ferramentas como Figma e organização da base de dados.
+2. Desenvolvimento do MVP (outubro, 4 semanas): implementação do quiz, cardápio interativo e resumo do pedido em frontend utilizando HTML e CSS, com backend em JavaScript.
+3. Testes e ajustes (novembro, 3 semanas): aplicação de testes de usabilidade, correção de erros e refinamento da interface.
+4. Entrega e apresentação (final de novembro, 1 semana): apresentação da solução.
 Dessa forma, o tempo estimado para a entrega de uma versão funcional é de aproximadamente 10 a 11 semanas. Essa previsão é coerente com a prática de desenvolvimento ágil de MVPs (Produto Mínimo Viável), que normalmente estabelecem prazos de 2 a 3 meses para soluções digitais de pequeno porte. 
 ## 4 RELEVÂNCIA
 A proposta do sistema é altamente significativa, pois integra tecnologia digital de autoatendimento com a humanização da experiência do usuário. No setor de alimentação, soluções interativas oferecem benefícios claros, como maior eficiência operacional, redução de erros nos pedidos e aumento da satisfação dos clientes.
 Além do aspecto funcional, a aplicação de interfaces lúdicas e personalizadas promove uma jornada mais agradável e inclusiva, estimulando o engajamento e fortalecendo a relação entre cliente e estabelecimento. Esse enfoque alia inovação tecnológica à valorização do atendimento, tornando o projeto diferenciado e alinhado às demandas atuais de digitalização no setor de serviços.
 
-LEVANTAMENTO DE REQUISITOS DO PROJETO
+## LEVANTAMENTO DE REQUISITOS DO PROJETO
 ## 1 PESQUISAS
 ### 1.1 Objetivo da Busca
 O objetivo foi identificar estudos acadêmicos e reportagens que tratam do uso de sistemas digitais de autoatendimento no setor de alimentação, buscando compreender seus impactos na experiência do usuário, na eficiência operacional e na satisfação dos clientes.
 Com isto buscamos transformar a tecnologia, que aos olhos de muitos é algo complexo, em algo humanizado e acessível para todos. O intuito é encontrar artigos que debatem e expliquem a importância da humanização da tecnologia para a sociedade.
+
 ### 1.2 Fonte de Busca
+
 ScienceDirect (base de dados acadêmica)
 Portais de notícias internacionais (The Sun, AllRecipes e MIT Technology Review)
 Google Acadêmico (LUT University)
+
 ### 1.3 Critérios de Seleção
+
 Selecionar apenas artigos acadêmicos e reportagens publicados recentemente (2024–2025), relacionados a autoatendimento, tecnologia digital no setor alimentício e experiência do usuário.
 Foram descartados materiais que não tinham relação direta com restaurantes, cafeterias ou quiosques digitais.
+
 ### 1.4 Materiais Selecionados
-Artigos: 
-“Design of interactive systems: Information visualization methods of self-service technology in fast food restaurants” (ScienceDirect, 2024).
-Link: ScienceDirect
-Palavras-chave utilizadas: “interactive self-service systems”
-“HUMANIZATION OF DIGITAL TECHNOLOGIES” (LUT University, 2024).
-Link: LUT University 
-Palavras-chave utilizadas: “tecnologia humanizada”, “humanization technologies”, “tecnologia”, “humanisation”, “technological innovation” e “sustainable development”.
-Reportagens:
-The Sun (2024) — “Bojangles to roll out digital kiosks in 800+ stores to cut wait times and boost accuracy.”
-AllRecipes (2025) — “Wendy’s introduces AI-powered multilingual drive-thru service.”
-Consumidor Moderno (2024) — “O verdadeiro significado de uma tecnologia humanizada”
-MIT Technology Review (2022) — “Tecnologia e Cultura humanizada a serviço da vida”
+
+* Artigos: 
+
+	- “Design of interactive systems: Information visualization methods of self-service technology in fast food restaurants” (ScienceDirect, 2024).
+
+		- Link: ScienceDirect
+
+		- Palavras-chave utilizadas: “interactive self-service systems”
+
+	* “HUMANIZATION OF DIGITAL TECHNOLOGIES” (LUT University, 2024).
+
+		* Link: LUT University 
+
+		* Palavras-chave utilizadas: “tecnologia humanizada”, “humanization technologies”, “tecnologia”, “humanisation”, “technological innovation” e “sustainable development”.
+
+* Reportagens:
+
+	* The Sun (2024) — “Bojangles to roll out digital kiosks in 800+ stores to cut wait times and boost accuracy.”
+
+	* AllRecipes (2025) — “Wendy’s introduces AI-powered multilingual drive-thru service.”
+
+	* Consumidor Moderno (2024) — “O verdadeiro significado de uma tecnologia humanizada”
+
+	* MIT Technology Review (2022) — “Tecnologia e Cultura humanizada a serviço da vida”
+
 ### 1.5 Como a Seleção Contribuiu para os Requisitos do Projeto
+
 A proposta do sistema é altamente relevante, pois une tecnologia digital de autoatendimento com humanização da experiência do usuário. No setor de alimentação, soluções de pedidos digitais têm crescido de forma expressiva, melhorando a eficiência operacional, reduzindo erros e aumentando a satisfação dos clientes.
 
 Estudos acadêmicos reforçam essa importância. O artigo selecionado (ScienceDirect, 2024) demonstra como sistemas de autoatendimento com interfaces intuitivas e visualmente claras reduzem erros e elevam indicadores de satisfação:
@@ -83,38 +105,44 @@ Com isto, ao analisar o cenário atual, para que haja uma interconexão entre o 
 Observando o cenário atual, a eficiência para o cliente é mais valorizada do que as especificidades técnicas do dispositivo em si. Com isto, “A humanização da tecnologia não está na forma ou no design estético de um dispositivo, mas na sua capacidade de entender o contexto da vida das pessoas, oferecendo soluções no momento exato em que são necessárias” (CONSUMIDOR MODERNO, 2023).
 
 ## 2 ENTREVISTA
+
 ### 2.1 Objetivo da Entrevista
+
 Foi realizada uma entrevista semi-estruturada com a atendente da Mais1Café da unidade de Apucarana, a fim de entender melhor a experiência dos clientes com a comanda digital do estabelecimento. A Mais1Café consiste em uma rede especializada em cafés que se destaca pelo seu visual jovem e moderno. Seu atendimento é baseado em uma comanda digital disponibilizada em totens, os quais podem ser utilizados pelos clientes durante o atendimento nas lojas físicas.
  
 ### 2.2 Roteiro da Entrevista
+
 O roteiro da entrevista foi montado com o intuito de abranger os principais aspectos do público-alvo da Mais1Café e do sistema de comanda digital utilizado no estabelecimento. Ele foi elaborado a fim de manter a entrevistada confortável durante o processo e entender o ponto de vista dela em relação ao tema abordado, visto que se trata de uma pessoa que interage com a comanda digital diariamente. Por se tratar de uma entrevista semi-estruturada, a entrevista não se prendeu exclusivamente às perguntas abaixo, de modo que ajustes foram realizados em tempo real sempre que necessário.
-2.2.1 Apresentação
+
+## 2.2.1 Apresentação
+
 Explicar o propósito da entrevista, a fim de contextualizar o entrevistado e deixá-lo confortável a respeito da precedência das perguntas.
 
-2.2.2 Aquecimento
+## 2.2.2 Aquecimento
+
 Perguntar sobre nome e período de atuação na loja. Buscar entender a experiência de trabalho da entrevistada e conhecê-la melhor, buscando criar uma transição suave para a etapa principal da entrevista.
 Perguntas direcionadas:
-Quem é o público-alvo da Mais1Café? São pessoas mais novas ou mais velhas?
-Qual o horário de pico da loja? 
-Como os clientes fazem o pedido?
+* Quem é o público-alvo da Mais1Café? São pessoas mais novas ou mais velhas?
+* Qual o horário de pico da loja? 
+* Como os clientes fazem o pedido?
 
 2.2.3 Parte principal
 Perguntas direcionadas:
-Os clientes geralmente sabem o que querem comprar assim que chegam ou passam muito tempo olhando o cardápio?
-Quais as dificuldades técnicas que os clientes enfrentam ao utilizar a comanda digital? Por que você acha que isso acontece?
-Já teve clientes que não quiseram utilizar a comanda digital? Se sim, por quê?
-A maior parte dos clientes consegue utilizar a comanda digital sozinhos?
+* Os clientes geralmente sabem o que querem comprar assim que chegam ou passam muito tempo olhando o cardápio?
+* Quais as dificuldades técnicas que os clientes enfrentam ao utilizar a comanda digital? Por que você acha que isso acontece?
+* Já teve clientes que não quiseram utilizar a comanda digital? Se sim, por quê?
+* A maior parte dos clientes consegue utilizar a comanda digital sozinhos?
 
 2.2.4 Desaquecimento
 Perguntas direcionadas:
-O que você acha da comanda digital da Mais1Café? Mudaria alguma coisa? Se sim, o que e por quê?
-(E você? Já usou?) Quando você vai em algum estabelecimento, você prefere ser atendida por um humano ou realizar seu pedido por meio de uma comanda digital? Por quê?
-Você acredita que o sistema de comanda digital pode substituir o atendimento humano no futuro? Por quê?
+* O que você acha da comanda digital da Mais1Café? Mudaria alguma coisa? Se sim, o que e por quê?
+* (E você? Já usou?) Quando você vai em algum estabelecimento, você prefere ser atendida por um humano ou realizar seu pedido por meio de uma comanda digital? Por quê?
+* Você acredita que o sistema de comanda digital pode substituir o atendimento humano no futuro? Por quê?
 
 2.2.5 Conclusão
 	Agradecer pelas respostas e permitir que a entrevistada faça suas considerações finais, a fim de confirmar suas respostas e refletir se tem algo a mais para complementar.
 	Perguntas direcionadas:
-Como você acha que seria uma comanda digital ideal?
+* Como você acha que seria uma comanda digital ideal?
 
 2.3 Transcrição da Entrevista
 Inicialmente, a entrevistada fez uma breve apresentação: seu nome é Cynthia, tem 25 anos e trabalha há quase 7 meses na Mais1Café. Antes disso, trabalhou como bartender fazendo e servindo drinks. Inclusive, ela comentou que a comanda digital facilita bastante as coisas, visto que já trabalhou com atendimento ao público em um local que não utilizava esse recurso. Cynthia pontuou que a comanda permite que o atendente foque mais em preparar o pedido, sem precisar dividir sua atenção em mais de uma tarefa simultaneamente. 
@@ -126,7 +154,6 @@ Ademais, ela ressaltou uma característica importante da comanda: o usuário pod
 
 2.3 Mapa Temático da Entrevista
 A partir dos dados obtidos na entrevista, foi realizada uma análise sistemática que permitiu extrair os principais pontos levantados. Nesse sentido, o mapa temático abaixo mostra categoriza e resume o que foi coletado durante a entrevista.
-
 
 DEFINIÇÃO DE REQUISITOS DO PROJETO
 1 HISTÓRIAS DE USUÁRIO
