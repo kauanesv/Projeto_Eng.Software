@@ -461,3 +461,5 @@ O padrão Template Method foi utilizado para estruturar o fluxo de operações q
 <img width="418" height="435" alt="image" src="https://github.com/user-attachments/assets/ee8e1d37-739f-4fa0-9e77-829d52514e04" />
 
 O padrão Factory Method foi utilizado para padronizar e centralizar a criação dos objetos Pedido e Item, garantindo maior organização e baixo acoplamento no sistema. Através das classes FabricaPedidos e FabricaItens, o sistema gera automaticamente novos pedidos e itens, evitando a necessidade de instanciar diretamente estas classes. Com isto, a comanda digital se torna mais flexível e fácil de manter, permitindo que futuras alterações no processo de criação sejam feitas sem impactar o restante do código.
+
+[link_video_slide.pdf](https://github.com/user-attachments/files/23190160/link_video_slide.pdf)
