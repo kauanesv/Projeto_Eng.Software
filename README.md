@@ -390,3 +390,74 @@ Durante o levantamento de requisitos, o projeto contemplou múltiplas formas par
 
 ## 3 FERRAMENTAS
 As mudanças registradas e implementadas nos requisitos da comanda podem ser documentadas no repositório do github do projeto, onde existe o versionamento completo da comanda, desde os seus requisitos iniciais até a versão mais recente. Além disso, caso seja implementada a funcionalidade “Reportar problema” na comanda ou a avaliação rápida ao fim de cada atendimento, os dados coletados podem ser registrados em um banco de dados, onde serão armazenadas possíveis mudanças solicitadas para o projeto.
+
+# GESTÃO DE QUALIDADE
+O gerenciamento da qualidade tem como objetivo definir os processos, os papéis, os padrões e as métricas realizadas pela equipe para conseguir garantir a qualidade do Software, durante toda a etapa de desenvolvimento. O sistema de comanda digital humanizada desenvolvido segue o padrão de arquitetura MVC e boas práticas de Engenharia de Software, buscando sempre assegurar a manutenção, o desempenho, a segurança e a usabilidade do mesmo. Com isto, para garantir que o sistema seja mantido, monitorado, avaliado e otimizado serão adotadas práticas contínuas de gestão de qualidade,
+
+## 1.1 PAPÉIS E RESPONSABILIDADES
+* João Pedro: responsável por documentar Visão e Modelo no MVC, pelo back-end e pela implementação do padrão de projeto Decorator;
+* Kauane: responsável por documentar Controlador no MVC, pelo back-end e pela implementação do padrão de projeto Template Method;
+* Estefane: responsável pelo front-end, pelo back-end e pela implementação do padrão de projeto Factory Method.
+## 1.2 FERRAMENTAS E PADRÕES DE DOCUMENTAÇÃO
+* Ferramentas e padrões de documentação
+* Controle de versionamento pelo github; 
+* Gerenciamento de tarefas/atividades foi feito pelo Trello;
+* Documentação no README do git;
+* Comunicação: Discord e reuniões semanais.
+## 1.3 PADRÕES DE CÓDIGO
+* O uso da linguagem de programação JavaScript, porque o sistema é implementado utilizando CSS e HTML, com isto a linguagem utilizada se encaixa perfeitamente no contexto de um WebSite da comanda digital;
+* Implementação dos padrões de projeto Factory Method, Template Method e Decorator para assim assegurar flexibilidade e reuso do código, sendo assim fácil de manutenibilidade;
+* Utilização do padrão de arquitetura Model-View-Controller (MVC).
+## 1.4 PADRÕES NÃO FUNCIONAIS
+* Usabilidade: Interface intuitiva, com botões de fácil acesso, com feedback visual;
+* Acessibilidade: Cores contrastantes, ícones representativos (como por exemplo a imagem de click sinalizando posição para iniciar o pedido), alternância de idiomas podendo variar entre Português Brasileiro, Inglês e Espanhol.
+* Manutenibilidade: código modular e documentado, sendo assim seguindo os padrões de projeto e de arquitetura.
+* Desempenho: O sistema funciona rapidamente, com um tempo de resposta abaixo de um segundo ao selecionar, avançar, confirmar ou exibir os dados na tela.
+## 1.5 PROCESSOS DE QUALIDADE
+1. Planejamento: As principais tarefas são definidas no Trello com responsáveis da tarefa em específico e prazos. Sendo revisado o progresso semanalmente pelo grupo. 
+2. Testes: São realizados testes unitários em funções e métodos, testes de integração entre os módulos separados seguindo o padrão MVC e testes de usabilidade simulando o sistema de comanda digital.
+3. Documentação: Foi utilizado o README do Github e o Google Docs para organização e atualização dos documentos, registrando decisões técnicas, mudanças significativas e melhorias. 
+4. Feedback: O grupo realiza reuniões quinzenais para avaliar o desempenho do sistema, a usabilidade e a integridade.
+## 1.6 GERENCIAMENTO DE PROCESSOS
+Desta forma, quando houver de adicionar novas funcionalidades ou realizar melhorias, a equipe especificará mudanças claras, seguida de uma análise de impacto, avaliando os riscos, custo e viabilidade.
+	Sendo assim, as modificações aprovadas serão implementadas de forma controlada e documentada, com testes e validações para assegurar a estabilidade do sistema e a manutenção da experiência do usuário.
+	Essas ações têm como objetivo preservar o desempenho, a segurança e a coerência estrutural do sistema, promovendo uma melhoria contínua alinhada às necessidades dos usuários e às boas práticas de Engenharia de Software.
+# PADRÃO DE ARQUITETURA 
+O padrão MVC (Model–View–Controller) foi escolhido para o sistema de comanda digital humanizada por oferecer uma separação clara entre interface, lógica e controle, tornando o código mais organizado, modular e fácil de manter. Essa estrutura permite atualizar a interface sem alterar as regras de negócio, favorece o trabalho em equipe e facilita a adição de novas funcionalidades. Além disso, o MVC integra-se bem com os padrões Factory Method, Template Method e Decorator, garantindo baixo acoplamento, alta coesão e maior escalabilidade do sistema, resultando em uma experiência de uso mais fluida e humanizada.
+## 1.1. PADRÃO DE ARQUITETURA VISÃO DO MVC
+A visão é uma das três camadas fundamentais do padrão de arquitetural Model-View-Controller (MVC) sendo o mesmo responsável por exibir para o usuário dados do sistema e capturar a interação entre eles. Diante disso, essa camada atua como uma interface entre o usuário e as aplicações internas do sistema, onde basicamente ela traduz os dados processados pela camada Modelo em elementos intuitivos e compreensíveis para exibição.
+Com isto, a visão não corresponde à parte lógica e nem manipula diretamente os  dados. Sua real função é exibir o estado atual dos dados no Modelo e reagir visualmente com as atualizações que no Modelo ocorrem, ou seja, atualizar quando os dados forem alterados. Desta forma, quando o usuário interage com a interface - por exemplo quando selecionar alguma opção ou confirmar uma ação - a Visão vai ter o papel de solicitar a ação para o Controlador, que por sua vez as interpreta e, se necessário, solicita as mudanças no Modelo. Com as modificações no modelo, a visão vai ser responsável por renderizar os dados atualizados, garantindo que o usuário tenha a representação mais recente do sistema.
+No contexto do sistema de comanda digital humanizada, a parte da visão se torna fundamental para a boa experiência do usuário, pois ela representa as telas de interação que possibilitam ao usuário visualizar o cardápio, selecionar itens, confirmar pedidos e alternar entre idiomas. Seu papel é garantir uma comunicação intuitiva, clara e acessível entre o usuário e as funcionalidades internas que compõem a tecnologia, mantendo assim a separação entre a lógica dos dados e a camada de apresentação - que é a base do MVC.
+## 1.2. PADRÃO DE ARQUITETURA - MODELO DO MVC
+A camada de Modelo, na arquitetura MVC, é responsável por encapsular o estado e as regras de negócio da aplicação, garantindo que toda a lógica referente ao funcionamento interno seja inerente à interface visual. Desta forma, no caso da comanda digital humanizada, o Modelo foi projetado para representar e gerenciar os estados dos dados essenciais do sistema, como listas de produtos disponíveis, os pedidos realizados pelo usuário, o valor total da comanda e o status de cada solicitação. 
+	Sendo assim, o Modelo tem como função atuar na base lógica das execuções realizadas pelo usuário, mantendo a integridade das informações para que todas as ações sigam as regras definidas para o funcionamento correto do sistema. Com isso, é o mesmo que realiza armazenamento, atualização e fornecimento de dados, recebendo instruções, diretamente, do Controlador - como adicionar um item, remover um produto ou confirmar um produto - processando assim, essas solicitações conforme a lógica que estiver implementada.
+	Diante disto, o Modelo também tem o papel de notificar a camada de Visão sempre que ocorrer uma mudança do estado de um dado, permitindo que a interface seja atualizada de forma coerente e estável com os dados atuais. Este tipo de comunicação entre os dois é extremamente importante, pois garante a sincronização entre o que o usuário vê e o que realmente está armazenado no sistema.
+	Consoante a isto, manter esta separação entre a lógica e apresentação torna o sistema mais organizado, modulado e facíl de manutenção, além de possibilitar futuras expansões, como a integração com banco de dados ou serviços externos. Consequentemente, assegura que a comanda digital humanizada funcione de forma consistente e confiável, mantendo a coerência entre os dados internos e o que é exibido ao usuário.
+## 1.3. PADRÃO DE ARQUITETURA - CONTROLADOR DO MVC
+O Controle é o cerne do sistema da comanda digital, atuando como o mediador central que gerencia o fluxo de controle e o estado da aplicação. Sua responsabilidade primordial é desacoplar a interface do usuário (View) da lógica de negócio e dos dados (Model), garantindo que o sistema seja organizado, manutenível e escalável.
+Ele opera em um ciclo contínuo de escuta, interpretação e despacho, recebendo todas as interações do usuário provenientes da interface, como toques em botões, seleção de categorias ou respostas ao quiz. A partir dessas ações, o Controle interpreta os eventos e os traduz em chamadas de funções lógicas. Por exemplo, um toque no botão “Finalizar Pedido” é convertido em uma chamada ao Model, como Model.exibirResumoPedido().
+Além disso, o Controle é o responsável por gerenciar o quiz e o fluxo de telas, determinando qual será exibida em cada etapa. Durante o processo interativo, ele conduz o usuário passo a passo — da seleção às opções, tamanho, quantidade e extras — garantindo também a possibilidade de retorno a etapas anteriores, quando necessário.
+Na integração com o Model, o Controle desempenha funções essenciais. Ele aciona a lógica de negócio, por exemplo, ao chamar Model.consultarEstoque() antes de exibir um produto, cumprindo o requisito de evitar que o cliente visualize itens indisponíveis. Após a execução das operações, o Controle instrui o Model a atualizar seus dados, mantendo o estado do sistema coerente.
+Com os dados processados, o Controle seleciona a View apropriada para apresentar as informações ao usuário. Quando o pedido é confirmado pelo Model, o Controle carrega a tela de confirmação e insere nela detalhes como o número do protocolo e o tempo estimado de espera.
+Dessa forma, o Controle assegura que a experiência do usuário seja fluida e intuitiva, mantendo a integridade dos dados e a eficiência operacional, ao garantir que o Model organize e envie os pedidos corretamente para a cozinha. Segue abaixo, o diagrama do padrão de arquitetura utilizado no sistema:
+
+<img width="721" height="437" alt="Captura de tela 2025-10-28 110148" src="https://github.com/user-attachments/assets/dd3de3e6-84d9-4a49-be68-d88ded7789a0" />
+
+# PADRÃO DE PROJETO
+Os padrões de projeto selecionados pela equipe foram Decorator feito pelo João Pedro, Template Method feito pela Kauane e o Factory Method feito pela Estefane. O uso desses padrões teve como objetivo garantir uma arquitetura mais flexível, modular e de fácil manutenibilidade, além de proporcionar melhor organização de código favorecendo a reutilização de componentes.
+## 1.1 DECORATOR
+
+<img width="389" height="478" alt="image" src="https://github.com/user-attachments/assets/0b633937-7c88-4f4e-bce4-7ed1e1b63147" />
+
+O padrão decorator permite a adição dinâmica de novas características aos itens do pedido, sem modificar sua original. As classes Opcao1, Opcao2 e Opcao3 decoram os objetos Item, acrescentando informações como opcionais, complementos ou ajustes no preço. Essa abordagem oferece flexibilidade ao sistema, permitindo que o cliente personalize seu pedido de maneira humanizada e modular, sem necessidade de criar diversas subclasses para cada combinação possível.
+## 1.2 TEMPLATE METHOD
+
+<img width="529" height="329" alt="image" src="https://github.com/user-attachments/assets/38fcd557-f611-4be3-84c7-47a5a4e9c417" />
+
+
+O padrão Template Method foi utilizado para estruturar o fluxo de operações que estão envolvidas na adição de itens à comanda.  Essa estrutura é implementada na classe abstrata ProcessadorAdicaoItem, e suas subclasses (ProcessadorAdicaoCardapio e ProcessadorAdicaoSugestao) adaptam o comportamento de acordo com o contexto. Isso permite que o sistema siga sempre uma sequência consistente de operações, e ao mesmo tempo em que permite variações específicas conforme a origem e a necessidade do item.
+## 1.3 FACTORY METHOD
+
+<img width="418" height="435" alt="image" src="https://github.com/user-attachments/assets/ee8e1d37-739f-4fa0-9e77-829d52514e04" />
+
+O padrão Factory Method foi utilizado para padronizar e centralizar a criação dos objetos Pedido e Item, garantindo maior organização e baixo acoplamento no sistema. Através das classes FabricaPedidos e FabricaItens, o sistema gera automaticamente novos pedidos e itens, evitando a necessidade de instanciar diretamente estas classes. Com isto, a comanda digital se torna mais flexível e fácil de manter, permitindo que futuras alterações no processo de criação sejam feitas sem impactar o restante do código.
