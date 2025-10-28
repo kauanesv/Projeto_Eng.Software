@@ -17,8 +17,9 @@ div.active {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
 }
+
+/* TELA INICIAL */
 
 div.screen_1 div button {
     font-size: 32px;
@@ -26,8 +27,7 @@ div.screen_1 div button {
     font-weight: bold;
     border-radius: 20px;
     position: relative;
-    margin: 5% 0;
-    
+    margin: 5% 0; 
 }
 
 button:hover {
@@ -82,7 +82,7 @@ div.screen_1 ul {
     flex-direction: row;
 }
 
-/* SCREEN 2 */
+/* TELA DE CATEGORIAS */
 
 div.screen_2 ul {
     display: flex;
@@ -143,7 +143,13 @@ div.screen_2 .texto_sugestoes p a {
     display: inline-block;
 }
 
-/* screen 3 */
+.sugestoes:hover {
+    scale: calc(1.02);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* TELA DE ITENS */
 div.screen_3 h2 {
     font-size: 32px;
     font-weight: bold;
@@ -202,8 +208,6 @@ div.screen_3 ul h3 {
 
 div nav img.carrinho_compras {
     width: 60px;
-
-
 }
 
 div nav img.carrinho_compras:hover {
@@ -214,7 +218,6 @@ div nav img.carrinho_compras:hover {
 
 div nav img.voltar {
     width: 40px;
-
 }
 
 div nav img.voltar:hover {
@@ -325,7 +328,7 @@ div.screen_5 button {
     margin-bottom: 20px;
 }
 
-/* TELA DE TAMANHOS */
+/* TELA DE ESCOLHA DE TAMANHO */
 
 div.screen_6 h2 {
     font-weight: bold;
@@ -392,7 +395,7 @@ div.screen_6 button {
     margin-bottom: 20px;
 }
 
-/* TELA DE QUANTIDADE */
+/* TELA DE QUANTIDADE  DE ITENS */
 div.screen_7 div.quantidade_box {
     border-radius: 20px;
     border: 1px solid black;
@@ -467,7 +470,7 @@ div.screen_7 h2 {
     margin-top: 20px;
 }
 
-/* SCREEN CARRINHO COMPRAS */
+/* TELA DE CARRINHO DE COMPRAS */
 
 div.screen_carrinho_compras h2 {
     font-weight: bold;
@@ -566,7 +569,7 @@ div.screen_carrinho_compras button {
     transition: all 0.5s ease-in-out;
 }
 
-/*TELA DE RESUMO PEDIDO*/
+/* TELA DE RESUMO DE PEDIDO */
 div.screen_resumo_pedido div.resumo_pedido_box {
     border-radius: 20px;
     border: 1px solid black;
@@ -673,7 +676,7 @@ div.screen_resumo_pedido h2 {
     margin-bottom: 30px;
 }
 
-/*TELA RESUMO DE PAGAMENTO*/
+/* TELA DE RESUMO DE PAGAMENTO */
 div.screen_resumo_pagamento div.resumo_pagamento_box{
     display: flex;
     flex-direction: column;
@@ -733,7 +736,7 @@ div.screen_resumo_pagamento button {
     margin-bottom: 20px;
 }
 
-/* PEDIDO CONFIRMADO */
+/* TELA DE PEDIDO CONFIRMADO */
 div.screen_pedido_confirmado h2 {
     font-weight: bold;
     font-size: 36px;

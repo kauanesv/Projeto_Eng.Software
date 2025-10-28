@@ -1,4 +1,4 @@
-const button = document.querySelector(".button");
+// elementos HTML
 const screen = document.querySelectorAll(".screen");
 const opcoes_radio = document.querySelectorAll(".opcoes_radio");
 const tamanho_radio = document.querySelectorAll(".tamanho_radio");
@@ -16,10 +16,7 @@ const div_itens_carrinho = document.querySelector(".itens_carrinho");
 const p_numero_pedido = document.querySelector(".valor_numero_pedido");
 const div_resumo_pedido_final = document.querySelector(".resumo_pedido");
 
-console.log(screen);
-
-//console.log(opcoes_radio)
-//console.log(screen);
+// variáveis de controle
 let pedidoAtual;
 let itemAtual;
 let qtdItemAtual;
@@ -28,56 +25,74 @@ let processador;
 
 let screenAtual = 0;
 
-let categorias = ["bebidas_quentes", "bebidas_geladas", "salgados", "doces"];
-
+// identifica clicks na tela
 window.addEventListener('click', e => {
-    if(e.target.classList.contains('button')){ 
+    // identifica clicks no botão
+    if(e.target.classList.contains('button')){
         if(e.target.classList.contains('finalizar_pedido')){
             screenAtual = 7; 
 
+            // permite finalizar pedido somente quando houver algum item
             if(pedidoAtual.itens.length > 0){
+                // passa a próxima tela
                 avancarEtapa(e);
             }
         } else {
             avancarEtapa(e);
         }
-        
+    // identifica quando o usuário acessa as sugestões
+    } else if(e.target.classList.contains('sugestoes')) {
+        avancarEtapa(e);
 
-        //console.log(e.target.classList);
-
+    // identifica quando o usuário quer fechar uma tela ou voltar uma tela anterior
     } else if(e.target.classList.contains('close_screen') || e.target.classList.contains('voltar')){
         voltarEtapa();
+    // identifica quando o usuário quer abrir o carrinho de compras
     } else if(e.target.classList.contains('carrinho_compras')){
+        // desativa tela atual
         screen[screenAtual].classList.remove('active');
         screen[screenAtual].classList.add('hidden');
+
+        // ativa tela de carrinho de compras
         screen_carrinho_compras.classList.remove('hidden');
         screen_carrinho_compras.classList.add('active');
+    // identifica quando o usuário quer fechar o carrinho de compras
     } else if(e.target.classList.contains('close_screen_carrinho')){
+        // desativa tela de carrinho de compras
         screen_carrinho_compras.classList.remove('active');
         screen_carrinho_compras.classList.add('hidden');
+
         if(screenAtual == 7){
             screenAtual = 1;
         }
+        
+        // ativa tela anterior ao carrinho de compras
         screen[screenAtual].classList.remove('hidden');
         screen[screenAtual].classList.add('active');
+    // identifica quando o usuário quer acessar o resumo do pedido
     } else if(e.target.classList.contains('resumo_pedido')){
         screen[screenAtual].classList.remove('active');
         screen[screenAtual].classList.add('hidden');
         screen_resumo_pedido.classList.remove('hidden');
         screen_resumo_pedido.classList.add('active');
+    // identifica quando o usuário quer acessar o resumo do pagamento
     } else if(e.target.classList.contains('resumo_pagamento')){
         screen[screenAtual].classList.remove('active');
         screen[screenAtual].classList.add('hidden');
         screen_resumo_pagamento.classList.remove('hidden');
         screen_resumo_pagamento.classList.add('active');
+     // identifica quando o usuário quer excluir um item do carrinho de compras
     } else if(e.target.classList.contains('img_lixeira')){
-        console.log(e.target.classList[1]);
+        // identifica item removido, limpa HTML e remove da lista de pedido
         let item_removido = document.querySelector(`.item${e.target.classList[1]}`);
         item_removido.innerHTML = '';
         pedidoAtual.removerItem(Number(e.target.classList[1]));
+    // identifica quando o usuário quer limpar o carrinho
     } else if(e.target.classList.contains('limpar_carrinho')){
+        // limpa todo o HTML e a lista do pedido
         div_itens_carrinho.innerHTML = '';
         pedidoAtual.itens = [];
+    // identifica quando o usuário seleciona a quantidade de itens
     } else if(screenAtual == 6){
         qtdItemAtual = Number(quantidade_itens.innerHTML);
         alteraQuantidade(e);
@@ -85,106 +100,137 @@ window.addEventListener('click', e => {
 })
 
 function alteraQuantidade(e){
+    // identifica quando o usuário reduz a quantidade de itens
     if(e.target.classList.contains('quantidade_menos')){
         if(qtdItemAtual > 1){
             qtdItemAtual--;
         }
+    // identifica quando o usuário aumenta a quantidade de itens
     } else if(e.target.classList.contains('quantidade_mais')){
         qtdItemAtual++;
     }
 
+    // escreve a quantidade no HTML
     quantidade_itens.innerHTML = qtdItemAtual;
 }
 
 function avancarEtapa(e){
+    // se o usuário estiver na tela inicial
     if(screenAtual == 0){
+        // instancia novo pedido
         pedidoAtual = FabricaPedidos.criarNovoPedido();
+        // instancia novo item
         itemAtual = FabricaItens.criarNovoItem();
+        // instancia novo processador para identificar a origem do item e validar os tipos
         processador = new ProcessadorAdicaoCardapio();
+    // se o usuário estiver na tela de categorias
     } else if(screenAtual == 1){
+        // verifica se o item ainda existe. Senão, cria outro
         if(itemAtual == null){
              itemAtual = FabricaItens.criarNovoItem();
         }
+
+        // obtém categoria selecionada
         itemAtual.categoria = e.target.classList[1];
-        //console.log(itemAtual);
+    // se o usuário estiver na tela de itens
     } else if(screenAtual == 2){
+        // obtém nome do item atual
         itemAtual.nome = e.target.classList[1];
-        console.log(itemAtual.nome);
+    // se o usuário estiver na tela de opções
     } else if(screenAtual == 4){ // opções
         for(let i = 0; i < opcoes_radio.length; i++){
+            // verifica o item que estiver checado
             if(opcoes_radio[i].checked){
-                console.log(itemAtual);
-                if(opcoes_radio[i].value==="opcao_1"){
+                // instancia opção de acordo com o que foi selecionado
+                if(opcoes_radio[i].value === "opcao_1"){
                     itemAtual = new Opcao1(itemAtual);
-                }else if(opcoes_radio[i].value==="opcao_2"){
+                } else if(opcoes_radio[i].value === "opcao_2"){
                     itemAtual = new Opcao2(itemAtual);
-                }else if(opcoes_radio[i].value==="opcao_3"){
+                } else if(opcoes_radio[i].value === "opcao_3"){
                     itemAtual = new Opcao3(itemAtual);
                 }
+
+                // salva opção selecionada 
                 itemAtual.opcao = opcoes_radio[i].value;
             }
         }
+    
+    // se o usuário estiver na tela de tamanhos
     } else if(screenAtual == 5){
         for(let i = 0; i < tamanho_radio.length; i++){
+            // verifica o item que estiver checado
             if(tamanho_radio[i].checked){
-               //itemAtual.item.tamanho = tamanho_radio[i].value; 
                itemBase = getItemBase(itemAtual);
+               // salva valor do tamanho selecionado
                itemBase.tamanho = tamanho_radio[i].value;
-               //console.log(itemAtual.tamanho); 
             } 
         }
+    // se o usuário estiver na tela de quantidade de itens e selecionou "adicionar ao carrinho"
     } else if(screenAtual == 6){
-        //itemAtual.item.quantidade = qtdItemAtual;
+        // salva quantidade selecionada
         itemBase = getItemBase(itemAtual);
         itemBase.quantidade = qtdItemAtual;
+        // adiciona item ao pedido
         processador.executarAdicao(pedidoAtual, itemAtual);
+        // limpa item atual
         itemAtual = null;
+    //se o usuário estiver na tela de resumo do pedido
     } else if(screenAtual == 7){
-        console.log("entrou no resumo pedido");
+        // chama função para exibir o resumo do pedido 
         exibeResumoPedido();
+    // se o usuário estiver na tela de resumo de pagamento
     } else if(screenAtual == 8){
-        console.log("entrou no resumo pagamento");
+        // chama função para exibir o resumo de pagamento
         exibeResumoPagamento();
+    // se o usuário estiver na tela de confirmar pedido
     } else if(screenAtual == 9){
+        // atualiza valor do número do pedido na exibição
         p_numero_pedido.innerHTML = pedidoAtual.numero;
+        // chama função para exibir o pedido confirmado
         exibePedidoConfirmado();
+        // esvazia caixa de exibição da tela do carrinho
         div_itens_carrinho.innerHTML = '';
+        // esvazia lista de itens do pedido
         pedidoAtual.itens = [];
     }
 
+    // oculta visibilidade da última tela vigente
     screen[screenAtual].classList.remove('active');
     screen[screenAtual].classList.add('hidden');
-
+    
+    // caso click na tela final
     if(screenAtual == 10){
+        // volta a tela inicial
         screenAtual = 0;
+        // esvazia itens da lista
         pedidoAtual.itens = [];
     }
     
+    // incrementa screen atual
     screenAtual++;
 
+    // habilita visibilidade da nova tela vigente
     screen[screenAtual].classList.remove('hidden');
     screen[screenAtual].classList.add('active');
-
 }
+
 function voltarEtapa(){
+    // oculta visibilidade da última tela vigente
     screen[screenAtual].classList.remove('active');
     screen[screenAtual].classList.add('hidden');
 
+    // decrementa screen atual
     screenAtual--;
 
+    // habilita visibilidade da nova tela vigente
     screen[screenAtual].classList.remove('hidden');
     screen[screenAtual].classList.add('active');
 }
 
 function exibePedidoConfirmado(){
-    // <div class="info_resumo_item">
-    //             <p class="info_qtd_nome_tamanho_item">Quantidade x item (tamanho)</p>
-    //             <p>R$XX,XX</p>
-    // </div>
-
-    console.log(pedidoAtual.itens);
-    
+    // percorre itens no pedido
     for(let i = 0; i < pedidoAtual.itens.length; i++){
+        // cria, classifica e adiciona elementos 
         let div_resumo_item = document.createElement("div");
         div_resumo_item.classList.add("info_resumo_item");
         let paragrafo_resumo_item = document.createElement("p");
@@ -198,15 +244,46 @@ function exibePedidoConfirmado(){
     }
 }
 
+function exibirItemCarrinho(base, item){
+    // cria, classifica e adiciona elementos da tela do carrinho
+    let div_item_carrinho = document.createElement("div");
+    div_item_carrinho.classList.add("item_carrinho");
+    div_item_carrinho.classList.add(`item${base.numero}`);
+    let div_imagens_carrinho = document.createElement("div");
+    div_imagens_carrinho.classList.add("imagens_carrinho");
+    let imagem_item = document.createElement("img");
+    imagem_item.src = "img/img_item.png";
+    imagem_item.classList.add("img_item");
+    let imagem_lixeira = document.createElement("img");
+    imagem_lixeira.src = "img/lixeira.png";
+    imagem_lixeira.classList.add("img_lixeira");
+    imagem_lixeira.classList.add(base.numero);
+    let div_descricao_carrinho = document.createElement("div");
+    div_descricao_carrinho.classList.add("descricao_carrinho");
+    let h3_nome_item = document.createElement("h3");
+    h3_nome_item.classList.add("nome_item");
+    let p_descricao_item = document.createElement("p");
+    p_descricao_item.classList.add("descricao_item");
+    let h3_preco_item = document.createElement("h3");
+    h3_preco_item.classList.add("preco_item");
+    div_itens_carrinho.appendChild(div_item_carrinho);
+    div_item_carrinho.appendChild(div_imagens_carrinho);
+    div_imagens_carrinho.appendChild(imagem_item);
+    div_imagens_carrinho.appendChild(imagem_lixeira);
+    div_item_carrinho.appendChild(div_descricao_carrinho);
+    h3_nome_item.innerHTML = base.nome;
+    div_descricao_carrinho.appendChild(h3_nome_item);
+    p_descricao_item.innerHTML = `${base.quantidade} x ${base.tamanho}<br>${item.opcao}`;
+    div_descricao_carrinho.appendChild(p_descricao_item);
+    h3_preco_item.innerHTML = `R$ XX,XX`;
+    div_descricao_carrinho.appendChild(h3_preco_item);
+}
+
 
 //////////////////////////////////////////////////////////////////////////////
 // factory method
+// Classe de pedido
 class Pedido {
-
-    // preço total
-    // listaItens
-    // numero do pedido
-
     constructor(numero){
         this.numero = numero;
         this.itens = [];
@@ -214,44 +291,9 @@ class Pedido {
 
     adicionarItem(item){
         let base = getItemBase(item);
-        //item.item.adicionado = true;
         base.adicionado = true;
         this.itens.push(item);
-        let div_item_carrinho = document.createElement("div");
-        div_item_carrinho.classList.add("item_carrinho");
-        //div_item_carrinho.classList.add(`item${item.item.numero}`);
-        div_item_carrinho.classList.add(`item${base.numero}`);
-        let div_imagens_carrinho = document.createElement("div");
-        div_imagens_carrinho.classList.add("imagens_carrinho");
-        let imagem_item = document.createElement("img");
-        imagem_item.src = "img/img_item.png";
-        imagem_item.classList.add("img_item");
-        let imagem_lixeira = document.createElement("img");
-        imagem_lixeira.src = "img/lixeira.png";
-        imagem_lixeira.classList.add("img_lixeira");
-        //imagem_lixeira.classList.add(item.item.numero);
-        imagem_lixeira.classList.add(base.numero);
-        let div_descricao_carrinho = document.createElement("div");
-        div_descricao_carrinho.classList.add("descricao_carrinho");
-        let h3_nome_item = document.createElement("h3");
-        h3_nome_item.classList.add("nome_item");
-        let p_descricao_item = document.createElement("p");
-        p_descricao_item.classList.add("descricao_item");
-        let h3_preco_item = document.createElement("h3");
-        h3_preco_item.classList.add("preco_item");
-        div_itens_carrinho.appendChild(div_item_carrinho);
-        div_item_carrinho.appendChild(div_imagens_carrinho);
-        div_imagens_carrinho.appendChild(imagem_item);
-        div_imagens_carrinho.appendChild(imagem_lixeira);
-        div_item_carrinho.appendChild(div_descricao_carrinho);
-        //h3_nome_item.innerHTML = item.item.nome;
-        h3_nome_item.innerHTML = base.nome;
-        div_descricao_carrinho.appendChild(h3_nome_item);
-        //p_descricao_item.innerHTML = `${item.item.quantidade} x ${item.item.tamanho}<br>${item.opcao}`;
-        p_descricao_item.innerHTML = `${base.quantidade} x ${base.tamanho}<br>${item.opcao}`;
-        div_descricao_carrinho.appendChild(p_descricao_item);
-        h3_preco_item.innerHTML = `R$ XX,XX`;
-        div_descricao_carrinho.appendChild(h3_preco_item);
+        exibirItemCarrinho(base, item);
     }
 
     removerItem(numero){
@@ -273,6 +315,7 @@ class Pedido {
     }
 }
 
+// Classe de Item
 class Item { 
     constructor(numero, categoria="", nome=null, quantidade=1, preco=1.0, tamanho="pequeno",opcao, adicionado = false, observacao=""){
         this.categoria = categoria;
@@ -284,10 +327,8 @@ class Item {
         this.numero = numero;
         this.adicionado = adicionado;
         this.observacao = observacao;
-        // extras
-        // opções
-        
     }
+    
     getNome(){
         return this.nome;
     }
@@ -297,6 +338,23 @@ class Item {
     }
 }
 
+// factory method (fabrica pedidos)
+class FabricaPedidos {
+    static criarNovoPedido(){
+        const novoPedido = new Pedido(Math.floor(Math.random() * 1000));
+        return novoPedido;
+    }
+}
+
+// factory method (fabrica itens)
+class FabricaItens {
+    static criarNovoItem(){
+        const novoItem = new Item(Math.floor(Math.random() * 1000));
+        return novoItem;
+    }
+}
+
+// Função para pegar o último objeto encapsulado do decorator
 function getItemBase(obj){
     while(obj.item){
         obj = obj.item;
@@ -304,10 +362,12 @@ function getItemBase(obj){
     return obj;
 }
 
+// Exibir resumo do pedido (elementos dinâmicos)
 function exibeResumoPedido(){
-    console.log("entrou na função de exibir resumo pedido...");
+    // Limpa a caixa principal 
     div_resumo_pedido.innerHTML = '';
 
+    // Cria e classifica lista de elementos
     let h3_box = document.createElement('div');
     h3_box.classList.add("h3_box");
     let resumo_h3 = document.createElement('h3');
@@ -316,13 +376,16 @@ function exibeResumoPedido(){
     h3_box.appendChild(resumo_h3);
     div_resumo_pedido.appendChild(h3_box);
 
+    // Percorre itens do pedido
     for(let i = 0; i < pedidoAtual.itens.length; i++){
+        // Seleciona item atual da lista do pedido
         const item = pedidoAtual.itens[i];
         itemBase = getItemBase(item);
 
+        // Cria, classifica e altera elementos de cada item
         let item_pedido_box = document.createElement('div');
         item_pedido_box.classList.add("item_pedido_box");
-        let div_item = document.createElement('div');//não tem classe
+        let div_item = document.createElement('div');
         let p_item = document.createElement('p');
         let info_box = document.createElement('div');
         info_box.classList.add("info_box");
@@ -365,23 +428,28 @@ function exibeResumoPedido(){
     }
 }
 
+// Exibir resumo de pagamento (elementos dinâmicos)
 function exibeResumoPagamento(){
-    console.log("entrou na função de exibir resumo pagamento...");
+    // Limpa caixa principal 
     div_resumo_pagamento.innerHTML = '';
 
+    // Cria e classifica elementos externos aos itens
     let info_pagamento_box_itens = document.createElement('div');
     info_pagamento_box_itens.classList.add("info_pagamento_box");
 
+    // Percorre itens do pedido
     for(let i = 0; i < pedidoAtual.itens.length; i++){
+        // Seleciona item atual da lista do pedido
         const item = pedidoAtual.itens[i];
-        console.log(item);
+        itemBase = getItemBase(item);
 
+        // Cria, classifica e altera elementos de cada item
         let div_item = document.createElement('div');
         let p_item = document.createElement('p');
-        let p_preco =document.createElement('p');
+        let p_preco = document.createElement('p');
         p_preco.classList.add('preco');
 
-        p_item.innerHTML = `${item.item.nome}`;
+        p_item.innerHTML = `${itemBase.nome}`;
         p_preco.innerHTML = "R$ XX,XX";
 
         div_item.appendChild(p_item);
@@ -390,6 +458,7 @@ function exibeResumoPagamento(){
         info_pagamento_box_itens.appendChild(div_item);
     }
 
+    // Cria e classifica elementos externos aos itens
     let info_pagamento_box_subtotal_imposto = document.createElement('div');
     info_pagamento_box_subtotal_imposto.classList.add("info_pagamento_box");
 
@@ -440,9 +509,8 @@ function exibeResumoPagamento(){
     div_resumo_pagamento.appendChild(info_pagamento_box_total);
 }
 
-//Decorator
+// Decorator
 class AdicionalDecorator{
-    
     constructor(item){
         this.item = item;
     }
@@ -452,9 +520,9 @@ class AdicionalDecorator{
     getPreco(){
         return this.item.getPreco();
     }
-
 }
 
+// Decorator Opção 1
 class Opcao1 extends AdicionalDecorator{
     getNome(){
         return this.item.getNome();
@@ -463,6 +531,8 @@ class Opcao1 extends AdicionalDecorator{
         return this.item.getPreco(); //Valor hipotético
     }
 }
+
+// Decorator Opção 2
 class Opcao2 extends AdicionalDecorator{
     getNome(){
         return this.item.getNome();
@@ -471,6 +541,8 @@ class Opcao2 extends AdicionalDecorator{
         return this.item.getPreco(); //Valor hipotético
     }
 }
+
+// Decorator Opção 3
 class Opcao3 extends AdicionalDecorator{
     getNome(){
         return this.item.getNome();
@@ -480,58 +552,52 @@ class Opcao3 extends AdicionalDecorator{
     }
 }
 
-class FabricaPedidos {
-    static criarNovoPedido(){
-        const novoPedido = new Pedido(Math.floor(Math.random() * 1000));
-        return novoPedido;
-    }
-}
-
-class FabricaItens {
-    static criarNovoItem(){
-        const novoItem = new Item(Math.floor(Math.random() * 1000));
-        return novoItem;
-    }
-}
-
-
-// template method
+// Template method
 class ProcessadorAdicaoItem {
+    // Simula classe abstrata
     constructor() {
         if (new.target == ProcessadorAdicaoItem){
             throw new Error("A classe ProcessarAdicaoItem é abstrata!");
         }
     }
 
+    // Executa sequência de métodos (tamplate)
     executarAdicao(pedido, item){
         this._validarItem(item);
         const itemProcessado = this.customizarItem(item);
         this._finalizarAdicao(pedido, itemProcessado);
     }
 
+    // Verifica validade de tipos
     _validarItem(item){
         if(!(item instanceof Item || item instanceof AdicionalDecorator)){
             throw new Error("Erro de Tipo: O objeto deve ser uma instância válida de Item.");
         }
     }
 
+    // Adiciona item ao pedido
     _finalizarAdicao(pedido, item){
         pedido.adicionarItem(item);
     }
     
+    // Função concreta para ser implementada pelas subclasses
     customizarItem(item){
         throw new Error("O método 'customizarItem()' deve ser implementado pela subclasse.");
     }
 }
 
+// Classe concreta
 class ProcessadorAdicaoCardapio extends ProcessadorAdicaoItem{
+    // Implementa método concreto herdado do pai
     customizarItem(item){
         item.observacao = "Adicionado via Cardápio Digital";
         return item;
     }
 }
 
+// Classe concreta
 class ProcessadorAdicaoSugestao extends ProcessadorAdicaoItem{
+    // Implementa método concreto herdado do pai
     customizarItem(item){
         //alterar atributos de item para alguma sugestão de produto
         item.observacao = "Adicionado via Sugestão do Sistema";
