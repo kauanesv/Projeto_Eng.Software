@@ -692,3 +692,5 @@ A integração da funcionalidade de tradução foi realizada diretamente sobre a
 A integração consistiu apenas em mapear cada bandeira para a função traduzirPagina(lang), permitindo que a troca de idioma fosse executada somente quando o usuário clicasse em um ícone específico. Nenhum texto da interface precisou ser modificado, reestruturado ou isolado, pois a tradução é realizada automaticamente pelo próprio mecanismo do Google. A função traduzirPagina(lang) foi implementada de forma a identificar o elemento select.goog-te-combo gerado dinamicamente pelo Google Translate e disparar programaticamente o evento de troca de idioma. 
 
 Assim, a nova funcionalidade pôde ser adicionada sem alterar a navegação entre telas, sem modificar botões e sem interferir com as funcionalidades implementadas nas fases anteriores do projeto. Portanto, a tradução foi uma nova funcionalidade incremental que trouxe a capacidade de tradução manual por ação explícita do usuário.
+
+[link_video_slide_2.pdf](https://github.com/user-attachments/files/23884600/link_video_slide_2.pdf)
