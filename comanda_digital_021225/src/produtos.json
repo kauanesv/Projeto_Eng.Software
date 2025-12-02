@@ -1,0 +1,131 @@
+[
+    {
+        "categoria": "Bebidas quentes",
+        "nome": "Capuccino Vanilla",
+        "preco": "9.50",
+        "id": "1",
+        "ingredientes": "Caramelo, Baunilha, Expresso, Leite",
+        "img": "https://www.creativecoffees.com/wp-content/uploads/2021/02/French-Vanilla-Cappuccino-2.jpg",
+        "rotulo": "mais_vendido"
+    },
+
+    {
+        "categoria": "Bebidas quentes",
+        "nome": "Capuccino Italiano",
+        "preco": "9.50",
+        "id": "2",
+        "ingredientes": "Espresso, Leite vegetal, Creme de leite",
+        "img": "https://static.wixstatic.com/media/9f3df5_f383557ba50047229fd7c749cf9a654b.jpg/v1/fill/w_624,h_432,al_c,lg_1,q_80/9f3df5_f383557ba50047229fd7c749cf9a654b.jpg",
+        "rotulo": "sem_lactose"
+    },
+
+    {
+        "categoria": "Bebidas quentes",
+        "nome": "Espresso",
+        "preco": "7.50",
+        "id": "3",
+        "ingredientes": "Café expresso com blend exclusivo",
+        "img": "data:image/jpeg;base64,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",
+        "rotulo": "null"
+    }, 
+    
+    {
+        "categoria": "Bebidas quentes",
+        "nome": "Macchiato",
+        "preco": "18.00",
+        "id": "4",
+        "ingredientes": "Espresso, Creme de leite",
+        "img": "https://www.notmilk.coffee/static/439fdf15b8ffe649cea39615c6da6eaa/1ca08/caramel-macchiato-2.jpg",
+        "rotulo": "null"
+    },
+
+    {
+        "categoria": "Bebidas geladas",
+        "nome": "Spiced Coffee",
+        "preco": "11.00",
+        "id": "5",
+        "ingredientes": "Frutas vermelhas, Gengibre, Canela, Espresso, Leite",
+        "img": "https://images.getrecipekit.com/20240515165529-spiced-20aeropress-20coffee.png?width=650&quality=90&",
+        "rotulo": "null"
+    },
+
+    {
+        "categoria": "Bebidas geladas",
+        "nome": "Iced Latte",
+        "preco": "12.50",
+        "id": "6",
+        "ingredientes": "Café especial, Leite, Gelo",
+        "img": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/iced-latte-30188f7.jpg?quality=90&resize=440,400",
+        "rotulo": "null"
+    },
+
+    {
+        "categoria": "Bebidas geladas",
+        "nome": "Caramel",
+        "preco": "11.50",
+        "id": "7",
+        "ingredientes": "Caramelo, Espresso, Leite, Chocolate branco",
+        "img": "https://frios.com.mx/wp-content/uploads/2025/04/receta_bakalar_caramelo_latte.jpg",
+        "rotulo": "mais_vendido"
+    }, 
+
+    {
+        "categoria": "Bebidas geladas",
+        "nome": "Fresh Coffee",
+        "preco": "10.50",
+        "id": "8",
+        "ingredientes": "Menta, Chocolate, Espresso, Leite",
+        "img": "https://capsulaexpress.com.br/wp-content/uploads/2020/03/4.png",
+        "rotulo": "null"
+    }, 
+
+    {
+        "categoria": "Salgados",
+        "nome": "Pão na chapa",
+        "preco": "7.00",
+        "id": "9",
+        "ingredientes": "Pão, Manteiga, Sal rosa do himalaia",
+        "img": "https://img.band.com.br/image/2025/01/23/pao-na-chapa-de-sao-paulo-165355.jpg",
+        "rotulo": "null"
+    }, 
+
+    {
+        "categoria": "Salgados",
+        "nome": "Pão com requeijão",
+        "preco": "7.50",
+        "id": "10",
+        "ingredientes": "Pão, Requeijão, Sal rosa rosa do himalaia",
+        "img": "https://f.i.uol.com.br/guia/bares/images/13290687.jpeg",
+        "rotulo": "sem_lactose"
+    }, 
+
+    {
+        "categoria": "Salgados",
+        "nome": "Wrap de frango",
+        "preco": "9.50",
+        "id": "11",
+        "ingredientes": "Frango, Requeijão, Massa integral",
+        "img": "https://receitadaboa.com.br/wp-content/uploads/2024/08/Wrap-integral-de-frango-com-legumes.jpg",
+        "rotulo": "sem_lactose"
+    }, 
+
+    {
+        "categoria": "Doces",
+        "nome": "Cookie de chocolate",
+        "preco": "6.50",
+        "id": "12",
+        "ingredientes": "Chocolate, Açúcar mascavo, Manteiga, Farinha de trigo integral, Ovos, Fermento biológico",
+        "img": "https://www.hersheyland.com.br/content/dam/hersheyland_brazil/pt_br/recipe/cookies-explosao-de-chocolate/cookies-explosao-de-chocolate.jpeg",
+        "rotulo": "mais_vendido"
+    },
+
+    {
+        "categoria": "Doces",
+        "nome": "Cookie de baunilha",
+        "preco": "6.50",
+        "id": "13",
+        "ingredientes": "Baunilha, Açúcar mascavo, Manteiga, Farinha de trigo integral, Ovos, Fermento biológico",
+        "img": "https://s2.glbimg.com/i7J3iLFSzpLbOYI_C3S46fJAkzw=/620x455/e.glbimg.com/og/ed/f/original/2022/07/28/receita-cookie-tradicional-classico-chocolate-baunilha-itamar-araujo-creamy-patisserie.jpg",
+        "rotulo": "mais_vendido"
+    }
+]

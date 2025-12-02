@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="google_translate_element" style="display:none;"></div>
+
+    <div class="active screen screen_1 active">
+        <img src="img/logo.png" class="logo_principal">
+       <h1>Seja bem-vindo ao NOME!</h1>
+       <div class="principal">
+           <button class="button">Iniciar Pedido
+               <img src="img/icone_indicador.png" class="icone_indicador">
+           </button>
+       </div>
+       <h2>Faça o seu pedido aqui!</h2>
+       <div class="language_options">
+            <ul>
+                <li>
+                    <img class="flag" onclick="selecionarBandeira(this); traduzirPagina('es')" src="img/spain_flag.png">
+                </li>
+                <li>
+                    <img class="flag" onclick="selecionarBandeira(this); traduzirPagina('en')" src="img/usa_flag.png">
+                </li>
+                <li>
+                    <img class="flag active" onclick="selecionarBandeira(this); traduzirPagina('pt')" src="img/brasil_flag.png">
+                </li>
+            </ul>
+       </div> 
+    </div>
+
+    <div class="screen screen_2 hidden">
+        <nav>
+            <img src="img/carrinho_compras.png" class="carrinho_compras">
+        </nav>
+        <h2>O que você gostaria de pedir hoje?</h2>
+        <ul>
+            <li>
+                <button class="button bebidas_quentes">
+                    Bebidas Quentes
+                </button>
+            </li>
+            <li>
+                <button class="button bebidas_geladas">
+                    Bebidas Geladas
+                </button>
+            </li>
+            <li>
+                <button class="button salgados">
+                    Salgados
+                </button>
+            </li>
+            <li>
+                <button class="button doces">
+                    Doces
+                </button>
+            </li>
+        </ul>
+        <div class="texto_sugestoes">
+            <p>Não sabe o que pedir?</p>
+            <p>Acesse nossas <a class="sugestoes">sugestões</a> para você!</p>
+        </div>
+    </div>
+
+    <div class="screen screen_3 hidden">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+            <img src="img/carrinho_compras.png" class="carrinho_compras">
+        </nav>
+        <h2 class="titulo_categoria"></h2>
+        <ul>
+            <!-- <li>
+                <button class="button item_1">
+                    <h3 class="button">Item 1</h3>
+                    <img class="button" src="img/img_item.png">
+                    <h3 class="button">R$ XX,XX</h3>
+                    <div class="rotulo  mais_vendido">Mais vendido</div>
+                </button>
+            </li>
+            <li>
+                <button class="button item_2">
+                    <h3 class="button">Item 2</h3>
+                     <img class="button" src="img/img_item.png">
+                     <h3 class="button">R$ XX,XX</h3>
+                     <div class="rotulo sem_lactose">Sem lactose</div>
+                </button>
+            </li>
+            <li>
+                <button class="button item_3">
+                    <h3 class="button">Item 3</h3>
+                    <img class="button" src="https://static.wixstatic.com/media/1075e4_d433b4bad60e43558403c0657f8b13b9~mv2.jpg/v1/fill/w_998,h_1000,al_c,q_85,usm_0.66_1.00_0.01/1075e4_d433b4bad60e43558403c0657f8b13b9~mv2.jpg">
+                    <h3 class="button">R$ XX,XX</h3>
+                </button>
+            </li> -->
+        </ul>
+    </div>
+
+    <div class="hidden screen screen_4">
+        <div class="div_close_screen"><img src="./img/X.png" class="close_screen"></div>
+        <div class="screen_4_box">
+            <h2 class="screen_4_nome_item">Item X</h2>
+            <h3>Ingredientes</h3>
+            <ul class="screen_4_lista_ingredientes">
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+            </ul>
+            <h3 class="screen_4_preco_item">R$ XX,XX</h3>
+            <button class="button">Selecionar item</button>
+        </div>
+    </div>
+
+    <div class="hidden screen screen_5">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+        </nav>
+        <h2>Opções</h2>
+        <div class="opcoes">
+            <div>
+                <input id="opcao_1" type="radio" name="opcoes" value="opcao_1" class="opcoes_radio" checked>
+                <label for="opcao_1">Opção 1</label>
+            </div>
+            <div>
+                <input id="opcao_2" type="radio" name="opcoes" value="opcao_2" class="opcoes_radio">
+                <label for="opcao_2">Opção 2</label>
+            </div>
+            <div>
+                <input id="opcao_3" type="radio" name="opcoes" value="opcao_3" class="opcoes_radio">
+                <label for="opcao_3">Opção 3</label>
+            </div>
+        </div>
+        <button class="button">Avançar</button>
+    </div>
+
+    <div class="hidden screen screen_6">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+        </nav>
+        <h2>Escolha o Tamanho</h2>
+        <div class="tamanhos">
+            <div class="tamanhos_opcao">
+                <input id="tamanho1" type="radio" name="tamanho" value="Pequeno" class="tamanho_radio" checked>
+                <label for="tamanho1">
+                    <div>
+                        <p>Pequeno</p>
+                        <div class="volume">Volume</div>
+                    </div>
+                    <p class="preco_pequeno">R$ XX,XX</p>
+                </label>
+            </div>
+            <div class="tamanhos_opcao">
+                <input id="tamanho2" type="radio" name="tamanho" value="Médio" class="tamanho_radio">
+                <label for="tamanho2">
+                    <div>
+                        <p>Médio</p>
+                        <div class="volume">Volume</div>
+                    </div>
+                    <p class="preco_medio">R$ XX,XX</p>
+                </label>
+            </div>
+            <div class="tamanhos_opcao">
+                <input id="tamanho3" type="radio" name="tamanho" value="Grande" class="tamanho_radio">
+                <label for="tamanho3">
+                    <div>
+                        <p>Grande</p>
+                        <div class="volume">Volume</div>
+                    </div>
+                    <p class="preco_grande">R$ XX,XX</p>
+                </label>
+            </div>
+        </div>
+        <button class="button">Avançar</button>
+    </div>
+
+    <div class="hidden screen screen_7">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+        </nav>
+        <h2>Escolha a Quantidade</h2>
+        <div class="quantidade_box">
+            <h3>Quantas unidades você gostaria?</h3>
+            <div class="quantidade_controles">
+                <button class="quantidade_menos">-</button>
+                <p class="quantidade_numero">1</p>
+                <button class="quantidade_mais">+</button>
+            </div>
+            <p>Preço total</p>
+            <p class="preco">R$ XX,XX</p> 
+        </div>
+        <button class="button">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="hidden screen screen_carrinho_compras">
+        <div class="div_close_screen_carrinho"><img src="./img/X.png" class="close_screen_carrinho"></div>
+        <h2>Carrinho</h2>
+        <div class="itens_carrinho">
+        </div>
+        <div class="preco_total">
+            <h3>Total</h3>
+            <h3 class="valor">R$ XX,XX</h3>
+        </div>
+        <div class="buttons_carrinho">
+            <button class="button finalizar_pedido">Finalizar Pedido</button>
+            <button class="close_screen_carrinho">Continuar Comprando</button>
+            <h3 class="limpar_carrinho">Limpar carrinho</h3>
+        </div>
+
+    </div>
+
+    <div class="hidden screen screen_resumo_pedido">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+        </nav>
+        <h2>Resumo do Pedido</h2>
+        <div class="resumo_pedido_box">
+        </div>
+        <button class="button">Continuar</button>
+    </div>
+
+    <div class="hidden screen screen_resumo_pagamento">
+        <nav>
+            <img src="img/voltar.png" class="voltar">
+        </nav>
+        <h2>Resumo de Pagamento</h2>
+        <div class="resumo_pagamento_box">
+        </div>
+        <button class="button">Confirmar pedido</button>
+        <p>Tempo estimado de preparo: x-x minutos</p>
+    </div>
+    <div class="screen screen_pedido_confirmado hidden">
+        <h2>Pedido confirmado</h2>
+        <h3 class="agradecimento_pedido">Obrigado pelo seu pedido!</h3>
+        <div class="numero_pedido">
+            <p>Número do pedido</p>
+            <p>:</p>
+            <p class="valor_numero_pedido"></p>
+        </div>
+        <div class="resumo_pedido">
+            <h3>Resumo do pedido:</h3>
+        </div>
+
+        <div class="resumo_total_pago">
+            <h3>Total Pago</h3>
+            <h3 class="valor">R$XX,XX</h3>
+        </div>
+
+        <button class="button">Fazer novo pedido</button>
+
+        <div class="tempo_estimado">
+            <h3>Tempo estimado: </h3>
+            <p>x-x minutos</p>
+        </div>
+
+    </div>
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+        // Bloqueia COM FORÇA qualquer tentativa do Google de restaurar idioma salvo
+        function resetarIdioma() {
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=" + location.hostname + "; path=/;";
+        }
+        resetarIdioma();
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'pt,en,es',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+        function traduzirPagina(lang) {
+            const select = document.querySelector("select.goog-te-combo");
+            
+            if (!select) {
+                console.error("O Google Translate ainda não carregou.");
+                return;
+            }
+            
+            select.value = lang;
+            select.dispatchEvent(new Event("change"));
+        }
+        function selecionarBandeira(elemento) {
+            const flags = document.querySelectorAll('.language_options .flag');
+            flags.forEach(f => f.classList.remove('active'));
+            elemento.classList.add('active');
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
