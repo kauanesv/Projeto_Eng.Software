@@ -693,4 +693,11 @@ A integração consistiu apenas em mapear cada bandeira para a função traduzir
 
 Assim, a nova funcionalidade pôde ser adicionada sem alterar a navegação entre telas, sem modificar botões e sem interferir com as funcionalidades implementadas nas fases anteriores do projeto. Portanto, a tradução foi uma nova funcionalidade incremental que trouxe a capacidade de tradução manual por ação explícita do usuário.
 
+# Refatoração geral
+
+Anteriormente, todo o funcionamento da aplicação estava concentrado em um único arquivo main.js. Esse arquivo reunia leitura, manipulação e exibição de dados, além da lógica de controle de telas. Essa abordagem mono estrutural dificultava a manutenção, aumentava o acoplamento e tornava qualquer modificação arriscada. 
+Deste modo, durante a refatoração, organizamos a aplicação em módulos, cada um com uma responsabilidade clara. A entrada de dados foi separada em entrada_dados.js, dedicado exclusivamente à leitura e preparação das informações consumidas pelo sistema. As regras de cálculos foram isoladas em calcula_preco.js, centralizando a lógica relacionada ao preço dos produtos. Toda a camada de apresentação foi movida para view.js, que passou a concentrar as rotinas de exibição, atualização da interface e identificação do estado visual atual. Já os testes e simulações, foram inseridos em auto_testes.js, permitindo validar comportamentos sem interferir na lógica do sistema.
+
+Após essa divisão, a main.js deixou de ser um bloco gigante contendo toda a lógica do sistema e passou a atuar apenas como coordenador de fluxo, importando e utilizando as funções de cada módulo conforme necessário. Essa modularização reduziu o acoplamento, aumentou a legibilidade e tornou o código mais fácil de evoluir, uma vez que cada parte pode ser modificada ou estendida sem afetar o restante da aplicação.
+
 [link_video_slide_2.pdf](https://github.com/user-attachments/files/23884600/link_video_slide_2.pdf)
