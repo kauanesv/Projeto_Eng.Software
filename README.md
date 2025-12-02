@@ -463,3 +463,153 @@ O padrão Template Method foi utilizado para estruturar o fluxo de operações q
 O padrão Factory Method foi utilizado para padronizar e centralizar a criação dos objetos Pedido e Item, garantindo maior organização e baixo acoplamento no sistema. Através das classes FabricaPedidos e FabricaItens, o sistema gera automaticamente novos pedidos e itens, evitando a necessidade de instanciar diretamente estas classes. Com isto, a comanda digital se torna mais flexível e fácil de manter, permitindo que futuras alterações no processo de criação sejam feitas sem impactar o restante do código.
 
 [link_video_slide.pdf](https://github.com/user-attachments/files/23190160/link_video_slide.pdf)
+
+# Casos de testes e refatoração
+
+## C.1 Funcionalidades 
+### C.1.1 Necessidade 1 
+* Como um usuário do sistema de comanda digital
+* Eu quero visualizar corretamente todos os atributo dos itens que selecionei
+* De modo que eu consiga confirmar que meu pedido foi configurado corretamente antes de finalizar a compra.
+
+### C.1.2 Necessidade 2
+* Como um usuário do sistema de comanda digital
+* Eu quero remover os itens do pedido corretamente
+* De modo que o carrinho e o pedido final contenham apenas o que realmente quero comprar.
+
+### C.1.3 Necessidade 3 
+* Como um usuário do sistema de comanda digital 
+* Eu quero usar as componentes de interface gráfica dispostas na tela
+* De modo que eu consiga usufruir do fluxo de telas, no ambiente, de maneira intuitiva, havendo a possibilidade de avançar e voltar às etapas.
+
+## C.2 Cenários Funcionais 
+### C.2.1 Cenários 1
+* Descrição do Cenário: Validar que todos os atributos selecionados (nome, opção, tamanho e quantidade) sejam exibidos corretamente no resumo do pedido e no carrinho de compras. 
+* Dado que o usuário selecionou um item clicando em um botão da tela de itens, marcou uma das opções disponíveis, escolheu um tamanho válido e definiu uma quantidade.
+* Quando ele  abrir a tela de resumo do pedido ou o carrinho de compras
+* Então todos os atributos do item (nome, opção, tamanho e quantidade) devem aparecer exatamente conforme selecionados.
+
+### C.2.2 Cenários 2
+* Descrição do Cenário: Verificar se os itens são removidos adequadamente do carrinho de compras e do pedido final.
+* Dado que o usuário escolheu um item no cardápio e o adicionou ao carrinho de compras
+* Quando ele abrir a tela do carrinho de compras e clicar no ícone de “lixeira” para remover um item
+* Então o item deve ser removido do carrinho de compras e, consequentemente, do pedido final.
+
+### C.2.3 Cenários 3
+* Descrição do Cenário: Fazer com que todos os fluxos de telas estejam em conformidade, ou seja, testar as possibilidades existentes naquele momento de decisão do usuário.
+* Dado que o usuário utilizou as componentes na tela como os botões, carrinho, feche a janela e etc
+* Quando ele interagir com a interface do sistema, independente da tela que se encontra como iniciar pedido, selecionar uma categoria, escolher a quantidade
+* Então o mesmo deve conseguir navegar sem problema nenhum, desde que siga o fluxo de telas e as ordens estabelecidas.
+
+## C.3 Cenários de Desempenho 
+### C.3.1 Cenários 1 
+* Descrição do Cenário: Avaliar se a tela de resumo e/ou do carrinho continua exibindo todos os atributos corretamente quando o usuário adiciona muitos itens. 
+* Dado que o usuário adicionou repetidamente diversos itens ao pedido
+* Quando ele abrir a tela de resumo e/ou carrinho
+* Então todos os itens devem ser renderizados com todos os atributos corretos
+
+## C.3.2 Cenários 2
+* Descrição do Cenário: Verificar se os itens são removidos adequadamente quando ocorrem várias remoções consecutivas e/ou simultaneamente.
+* Dado que o usuário adicionou vários itens no carrinho de compras
+* Quando ele remover vários itens sucessivamente
+* Então todos os itens removidos devem ser excluídos corretamente do carrinho de compras e do pedido final.
+
+## C.3.3 Cenários 3 
+* Descrição do Cenário: Constatar se as telas estão mudando de acordo com as escolhas do usuário 
+* Dado que o usuário utiu várias componentes fazendo com que ele navegue por várias páginas, selecionando itens, removendo, adicionando, checando carrinho
+* Quando ele finalizar o pedido depois de uma sequência aleatória de tela
+* Então toda a sequência deve ser validada confirmando o uso correto da interface.
+
+##  D.1 Escopo dos Testes
+<div align="center">
+	Tabela D.1 - Teste de Requisitos
+	
+</div>
+<div align="center">
+	<img width="600" height="316" alt="image" src="https://github.com/user-attachments/assets/b9c3461a-8aa9-4f24-8b05-d51e0e2fc2e9" />
+</div>
+<div align="center">
+	Tabela D.2 - Teste Funcionais
+</div>
+<div align="center">
+	<img width="599" height="300" alt="image" src="https://github.com/user-attachments/assets/25c6a8f7-0eaf-40aa-a88f-b4f607d67c80" />
+</div>
+<div align="center">
+	Tabela D.3 - Teste de Performance
+</div>
+<div align="center">
+	<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/af10e6c3-026c-449a-a7db-5f522318c9af" />
+</div>
+
+## D.2 Resultados Obtidos 
+### D.2.1 Exibição dos atributos do item
+
+<div align="center">
+	Tabela D.6: Defeitos Encontrados Durante a Realização do Teste de Requisitos 
+</div>
+<div align="center">
+	<img width="596" height="202" alt="image" src="https://github.com/user-attachments/assets/f7706b6f-2074-4920-8834-751b06a406f1" />
+</div>
+
+<div align="center">
+	Tabela D.7: Defeitos Encontrados Durante a Realização do Teste Funcional
+</div>
+<div align="center">
+	<img width="595" height="237" alt="image" src="https://github.com/user-attachments/assets/7ce9b91f-7203-4a25-96ec-aeb3adf722d0" />
+</div>
+
+<div align="center">
+	Tabela D.9: Defeitos Encontrados Durante a Realização do Teste de Performance 
+</div>
+	
+<div align="center">
+	<img width="601" height="241" alt="image" src="https://github.com/user-attachments/assets/8bf9e72a-d5a6-467d-b985-f8ecb465f6b5" />
+</div>
+
+## D.2.2 Remoção dos itens do pedido
+
+Em resumo, a remoção dos itens do pedido era uma funcionalidade que estava funcionando corretamente na primeira versão do projeto que corresponde ao T2. Contudo, o único problema encontrado foi a remoção de itens que não foram adicionados corretamente ao pedido final, de modo que não havia um controle para identificar se o pedido foi removido ou se ele não existia. 
+
+<div align="center">
+	Tabela D.6: Defeitos Encontrados Durante a Realização do Teste de Requisitos 
+</div>
+<div align="center">
+	<img width="596" height="171" alt="image" src="https://github.com/user-attachments/assets/91d8fa59-69da-4d75-bb3d-e838942c8f9b" />
+</div>
+
+<div align="center">
+	Tabela D.7: Defeitos Encontrados Durante a Realização do Teste Funcional
+</div>
+<div align="center">
+	<img width="596" height="202" alt="image" src="https://github.com/user-attachments/assets/807686c4-a6fe-4aa9-926e-d6e98afff0bb" />
+</div>
+
+<div align="center">
+	Tabela D.9: Defeitos Encontrados Durante a Realização do Teste de Performance 
+</div>
+<div align="center">
+	<img width="601" height="189" alt="image" src="https://github.com/user-attachments/assets/78274f8e-ca0d-4436-b50c-d130652042f8" />
+</div>
+
+## D.3.1 Exibição correta do fluxo de telas
+
+<div align="center">
+	Tabela D.6: Defeitos Encontrados Durante a Realização do Teste de Requisitos 
+</div>
+<div align="center">
+	<img width="596" height="171" alt="image" src="https://github.com/user-attachments/assets/48763c74-f14e-42bb-b7cf-836803ac7697" />
+</div>
+
+<div align="center">
+	Tabela D.7: Defeitos Encontrados Durante a Realização do Teste Funcional
+</div>
+<div align="center">
+	<img width="596" height="203" alt="image" src="https://github.com/user-attachments/assets/cb3110ba-8f4f-4a61-9be3-358f28731df3" />
+</div>
+
+<div align="center">
+	Tabela D.9: Defeitos Encontrados Durante a Realização do Teste de Performance 
+</div>
+<div align="center">
+	<img width="598" height="187" alt="image" src="https://github.com/user-attachments/assets/5ff11724-16c3-4a9e-b9d2-18ab3660efda" />
+</div>
